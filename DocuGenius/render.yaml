@@ -1,0 +1,47 @@
+# Render.com deployment configuration
+# https://render.com/docs/yaml-spec
+
+services:
+  # FastAPI Web Service
+  - type: web
+    name: docugenius-api
+    env: python
+    region: frankfurt  # Choose closest region
+    plan: free  # Free tier
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: SUPABASE_URL
+        sync: false  # Set in Render dashboard
+      - key: SUPABASE_KEY
+        sync: false  # Set in Render dashboard
+      - key: OLLAMA_BASE_URL
+        value: http://localhost:11434  # Note: Ollama won't work on Render free tier
+      - key: OLLAMA_MODEL
+        value: mistral
+      - key: MEILISEARCH_URL
+        sync: false  # Set in Render dashboard (external Meilisearch)
+      - key: MEILISEARCH_MASTER_KEY
+        sync: false  # Set in Render dashboard
+      - key: DEBUG
+        value: False
+      - key: MAX_UPLOAD_SIZE
+        value: 10485760
+    
+    # Disk storage for uploads (optional)
+    # Note: Free tier has limited disk space
+    disk:
+      name: uploads
+      mountPath: /app/uploads
+      sizeGB: 1
+
+# Note: Ollama cannot run on Render free tier (requires GPU/more resources)
+# Options:
+# 1. Use rule-based classification (fallback is built-in)
+# 2. Deploy Ollama on a separate VPS (e.g., Hetzner €4/month)
+# 3. Use cloud LLM API (OpenAI, Anthropic) with pay-per-use
+

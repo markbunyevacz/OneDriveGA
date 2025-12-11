@@ -1,0 +1,36 @@
+# Docker Compose for local development
+# Runs Meilisearch locally
+
+version: '3.8'
+
+services:
+  # Meilisearch - Search Engine
+  meilisearch:
+    image: getmeili/meilisearch:v1.5
+    container_name: docugenius-meilisearch
+    ports:
+      - "7700:7700"
+    environment:
+      - MEILI_ENV=development
+      - MEILI_MASTER_KEY=masterKey123  # Change in production!
+    volumes:
+      - meilisearch_data:/meili_data
+    restart: unless-stopped
+
+  # Ollama - Local LLM (requires more resources)
+  # Uncomment if you want to run Ollama in Docker
+  # Note: Requires significant CPU/RAM
+  # ollama:
+  #   image: ollama/ollama:latest
+  #   container_name: docugenius-ollama
+  #   ports:
+  #     - "11434:11434"
+  #   volumes:
+  #     - ollama_data:/root/.ollama
+  #   restart: unless-stopped
+  #   # After starting, run: docker exec -it docugenius-ollama ollama pull mistral
+
+volumes:
+  meilisearch_data:
+  # ollama_data:
+
