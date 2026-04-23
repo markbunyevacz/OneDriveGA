@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pécs, Hungária utca 28–30. · 1. emelet — 114 m² + 100 m² tetőtér</title>
+<meta name="description" content="Prémium lokáció Pécs belvárosához közel: 114 m² lakás saját lépcsőházzal, 100 m² beépíthető tetőtérrel, zárt udvari parkolóval, A energetikai osztály." />
+<style>
+  :root{
+    --bg:#0e1116;
+    --bg-2:#141922;
+    --card:#171c26;
+    --line:#242b38;
+    --text:#e8ecf3;
+    --muted:#98a2b3;
+    --accent:#d4a24b;      /* warm brass */
+    --accent-2:#b8863a;
+    --good:#4ade80;
+    --warn:#f59e0b;
+    --radius:14px;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Inter",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(212,162,75,.12), transparent 60%),
+      radial-gradient(900px 500px at -10% 10%, rgba(212,162,75,.08), transparent 60%),
+      var(--bg);
+    color:var(--text);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:28px 22px}
+
+  /* HEADER */
+  header.hero{
+    padding:48px 22px 28px;
+    border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg, rgba(212,162,75,.06), transparent 70%);
+  }
+  .hero-inner{max-width:var(--maxw); margin:0 auto}
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:12px; letter-spacing:.18em; text-transform:uppercase;
+    color:var(--accent); font-weight:600;
+  }
+  .eyebrow::before{content:""; width:28px; height:1px; background:var(--accent)}
+  h1{
+    font-size:clamp(28px, 4.2vw, 44px);
+    line-height:1.15; margin:10px 0 8px; font-weight:700; letter-spacing:-.01em;
+  }
+  .sub{color:var(--muted); font-size:clamp(15px,1.4vw,17px); max-width:780px}
+  .hero-meta{
+    display:flex; flex-wrap:wrap; gap:10px; margin-top:18px;
+  }
+  .chip{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:8px 12px; background:var(--bg-2); border:1px solid var(--line);
+    border-radius:999px; font-size:13px; color:var(--text);
+  }
+  .chip.accent{ border-color:rgba(212,162,75,.35); color:var(--accent) }
+  .chip .dot{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+
+  /* HIGHLIGHT GRID */
+  .stats{
+    display:grid; gap:14px;
+    grid-template-columns:repeat(4, minmax(0,1fr));
+    margin-top:24px;
+  }
+  .stat{
+    background:var(--card); border:1px solid var(--line);
+    border-radius:var(--radius); padding:18px;
+  }
+  .stat .k{font-size:12px; color:var(--muted); letter-spacing:.06em; text-transform:uppercase}
+  .stat .v{font-size:clamp(22px, 2.4vw, 28px); font-weight:700; margin-top:6px}
+  .stat .s{font-size:12px; color:var(--muted); margin-top:4px}
+  @media (max-width:900px){ .stats{grid-template-columns:repeat(2,1fr)} }
+
+  /* SECTIONS */
+  section{padding:36px 0; border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:0}
+  h2{
+    font-size:clamp(20px, 2.2vw, 26px);
+    margin:0 0 6px; letter-spacing:-.01em;
+  }
+  h2 .num{
+    color:var(--accent); font-weight:600; margin-right:10px;
+    font-variant-numeric:tabular-nums;
+  }
+  .lede{color:var(--muted); margin:0 0 22px; max-width:780px}
+
+  .grid{display:grid; gap:16px}
+  .grid.two{grid-template-columns:1fr 1fr}
+  .grid.three{grid-template-columns:repeat(3,1fr)}
+  @media (max-width:800px){ .grid.two,.grid.three{grid-template-columns:1fr} }
+
+  .card{
+    background:var(--card); border:1px solid var(--line);
+    border-radius:var(--radius); padding:20px;
+    box-shadow:var(--shadow);
+  }
+  .card h3{margin:0 0 10px; font-size:17px}
+  .card p{margin:0; color:var(--muted)}
+
+  /* KV LIST */
+  dl.kv{
+    display:grid; grid-template-columns: 1fr 1fr; gap:2px 20px;
+    margin:0; padding:0;
+  }
+  dl.kv > div{
+    display:flex; justify-content:space-between; gap:12px;
+    padding:10px 0; border-bottom:1px dashed var(--line);
+  }
+  dl.kv dt{color:var(--muted); font-size:14px}
+  dl.kv dd{margin:0; font-weight:600; font-size:14px; text-align:right}
+  @media (max-width:700px){ dl.kv{grid-template-columns:1fr} }
+
+  /* BADGES */
+  .badge{
+    display:inline-flex; align-items:center; gap:6px;
+    padding:3px 9px; border-radius:999px;
+    font-size:12px; font-weight:600;
+    background:rgba(74,222,128,.12); color:var(--good);
+    border:1px solid rgba(74,222,128,.25);
+  }
+  .badge.warn{ background:rgba(245,158,11,.12); color:var(--warn); border-color:rgba(245,158,11,.3) }
+
+  /* LIST */
+  ul.clean{list-style:none; padding:0; margin:0}
+  ul.clean li{
+    padding:10px 0; border-bottom:1px dashed var(--line);
+    display:flex; gap:12px; align-items:flex-start;
+  }
+  ul.clean li:last-child{border-bottom:0}
+  ul.clean li::before{
+    content:"✓"; color:var(--accent); font-weight:700; margin-top:1px;
+  }
+  ul.clean.warn li::before{content:"!"; color:var(--warn)}
+
+  /* FOOTER */
+  footer{
+    padding:28px 22px 48px; color:var(--muted); font-size:13px;
+    max-width:var(--maxw); margin:0 auto; text-align:center;
+  }
+
+  /* PRINT */
+  @media print{
+    body{background:#fff; color:#111}
+    header.hero, section{border-color:#ddd}
+    .card, .stat{background:#fff; color:#111; box-shadow:none; border-color:#ddd}
+    .chip, .badge{background:#fff; color:#111; border-color:#bbb}
+    dl.kv dt{color:#555}
+    a{color:#111}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow">Ingatlan adatlap · Pécs</span>
+    <h1>Hungária utca 28–30., 1. emelet — prémium lokáció,<br/>saját lépcsőházzal és beépíthető tetőtérrel.</h1>
+    <p class="sub">
+      114 m² társasházi lakás <strong>privát bejárattal és saját lépcsőházzal</strong>,
+      100 m² nyers, beépíthető tetőtérrel (~214 m² potenciál),
+      zárt udvari parkolóval, <strong>A energetikai osztállyal</strong> és saját gázkazánnal —
+      Pécs egyik legjobb utcájában, közvetlenül a PTE mellett.
+    </p>
+
+    <div class="hero-meta">
+      <span class="chip accent"><span class="dot"></span> Pécs · Belváros-közeli</span>
+      <span class="chip">1. emelet</span>
+      <span class="chip">114 m² + 100 m² tetőtér</span>
+      <span class="chip">Déli tájolás</span>
+      <span class="chip">Zárt udvari parkoló</span>
+      <span class="chip">A energetika</span>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="k">Alapterület</div>
+        <div class="v">114 m²</div>
+        <div class="s">1. emelet</div>
+      </div>
+      <div class="stat">
+        <div class="k">Beépíthető tetőtér</div>
+        <div class="v">+100 m²</div>
+        <div class="s">engedély megszerezhető</div>
+      </div>
+      <div class="stat">
+        <div class="k">Teljes potenciál</div>
+        <div class="v">~214 m²</div>
+        <div class="s">galériás kialakítás lehetséges</div>
+      </div>
+      <div class="stat">
+        <div class="k">Közös költség</div>
+        <div class="v">~20 000 Ft/hó</div>
+        <div class="s">alacsony</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- LOKÁCIÓ -->
+  <section>
+    <h2><span class="num">01</span>Lokáció és épület</h2>
+    <p class="lede">Pécs egyik legjobb utcája, frissen megújult közterülettel. A Pécsi Tudományegyetem tőszomszédsága
+      stabil bérlői és vevői keresletet biztosít az év minden szakában.</p>
+
+    <div class="grid two">
+      <div class="card">
+        <h3>Cím és környezet</h3>
+        <dl class="kv">
+          <div><dt>Cím</dt><dd>Hungária u. 28–30., 1. em.</dd></div>
+          <div><dt>Városrész</dt><dd>Belváros-közeli prémium</dd></div>
+          <div><dt>Tömegközlekedés</dt><dd>143 m-re megálló</dd></div>
+          <div><dt>PTE elérés</dt><dd>Közvetlen kapcsolat</dd></div>
+          <div><dt>Utca állapota</dt><dd>2023-ban megújult</dd></div>
+          <div><dt>Fejlesztés</dt><dd>Zöld kapu projekt</dd></div>
+        </dl>
+      </div>
+      <div class="card">
+        <h3>Zöld kapu projekt (2023)</h3>
+        <ul class="clean">
+          <li>Új gyalogos sétányok és kerékpárutak.</li>
+          <li>Parkosított, fásított utcakép.</li>
+          <li>Elektromos autó töltőpontok.</li>
+          <li>PTE-hez közvetlen, gyalogos elérés — 4000+ külföldi hallgató aktív bérlői / vevői keresletet generál.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARAMÉTEREK -->
+  <section>
+    <h2><span class="num">02</span>Az ingatlan paraméterei</h2>
+    <p class="lede">Ritka adottság: <strong>saját, privát lépcsőház</strong> teszi a lakást szinte
+      önálló házzá egy társasházi épületben.</p>
+
+    <div class="grid two">
+      <div class="card">
+        <dl class="kv">
+          <div><dt>Típus</dt><dd>Társasházi lakás</dd></div>
+          <div><dt>Lépcsőház</dt><dd>Saját, privát</dd></div>
+          <div><dt>Emelet</dt><dd>1. emelet</dd></div>
+          <div><dt>Alapterület</dt><dd>114 m²</dd></div>
+          <div><dt>Tetőtér</dt><dd>100 m² (nyers)</dd></div>
+          <div><dt>Potenciál</dt><dd>~214 m²</dd></div>
+          <div><dt>Tájolás</dt><dd>Déli, napsütéses</dd></div>
+          <div><dt>Erkély / terasz</dt><dd>Nincs</dd></div>
+        </dl>
+      </div>
+      <div class="card">
+        <h3>Miért kiemelkedő?</h3>
+        <ul class="clean">
+          <li><strong>Önálló, privát bejárat</strong> — nem osztott lépcsőház más lakóval.</li>
+          <li><strong>Déli tájolás</strong> — természetes fény egész nap.</li>
+          <li><strong>+100 m² bővítési lehetőség</strong> felfelé, a tetőtérben.</li>
+          <li>100+ éves <strong>téglaépület</strong> — szolid szerkezet, kiváló akusztika és termikus inercia.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- MŰSZAKI -->
+  <section>
+    <h2><span class="num">03</span>Műszaki jellemzők</h2>
+    <p class="lede">Modern energetikai paraméterek egy klasszikus, téglából épült épületben — ritka kombináció.</p>
+
+    <div class="grid three">
+      <div class="card">
+        <h3>Energetika <span class="badge">A osztály</span></h3>
+        <p>Kiváló hőtechnika, alacsony rezsi. Modern, jó állapotú nyílászárók — <strong>csere nem szükséges</strong>.</p>
+      </div>
+      <div class="card">
+        <h3>Fűtés</h3>
+        <p>Saját gázkazán, <strong>önálló szabályozás</strong> (nem közös). A lakó maga dönt a fogyasztásról és fűtési menetrendről.</p>
+      </div>
+      <div class="card">
+        <h3>Állapot</h3>
+        <p>2006-ban felújított, azóta <strong>egyetlen személy</strong> lakta — közepes-jó állapot, kozmetikai frissítéssel kiválóan használható.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EGYÉB -->
+  <section>
+    <h2><span class="num">04</span>Egyéb jellemzők</h2>
+    <div class="grid three">
+      <div class="card">
+        <h3>Parkolás</h3>
+        <p><strong>Zárt belső udvari parkoló</strong> — belvárosi környezetben ritka és értéknövelő tényező.
+        Biztonságos, az utcai forgalomtól elzárt.</p>
+      </div>
+      <div class="card">
+        <h3>Közös költség</h3>
+        <p>~<strong>20 000 Ft/hó</strong> — alacsony, kiszámítható. Az önálló gázkazán miatt
+        a fűtés nincs benne közösként.</p>
+      </div>
+      <div class="card">
+        <h3>Épület</h3>
+        <p>100+ éves téglaépület. Belső közös területek használtak, de takarítottak.
+        Utcafront felújításra szorul (társasházi projekt kérdése).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TETŐTÉR -->
+  <section>
+    <h2><span class="num">05</span>Tetőtér — +100 m² potenciál</h2>
+    <p class="lede">A lakás fölötti <strong>100 m² nyers, beépítetlen tetőtér</strong> a kiemelkedő érték- és
+      élettér-növelő tényező. Az engedély megszerezhető, a beépíthetőség szinte a fal/tető határáig kiterjed.</p>
+
+    <div class="grid two">
+      <div class="card">
+        <h3>Jelenlegi állapot és lehetőségek</h3>
+        <ul class="clean">
+          <li><strong>Nyers, beépítetlen</strong> állapot — szabadon tervezhető alaprajz.</li>
+          <li>Beépítési engedély <strong>megszerezhető</strong>.</li>
+          <li>Beépíthetőség: szinte a <strong>fal/tető határáig</strong>.</li>
+          <li>~<strong>+100 m²</strong> nettó hasznos tér adható hozzá.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Használati ötletek</h3>
+        <ul class="clean">
+          <li>Extra hálószoba(k) — családbővítéshez vagy hallgatói bérléshez.</li>
+          <li>Dolgozószoba, home-office — csendes, felső szint.</li>
+          <li>Vendégszoba / stúdió — akár külön kiadásra.</li>
+          <li><strong>Galériás kialakítás</strong> — látványos, magas belmagasságú tér.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÖSSZEGZÉS -->
+  <section>
+    <h2><span class="num">06</span>Összegzés</h2>
+    <div class="grid two">
+      <div class="card">
+        <h3>Erősségek <span class="badge">8 kiemelt pont</span></h3>
+        <ul class="clean">
+          <li>Prémium lokáció — Pécs egyik legjobb utcája, friss városfejlesztés.</li>
+          <li>Saját, privát lépcsőház — ritka adottság.</li>
+          <li>Zárt udvari parkoló.</li>
+          <li>A energetikai osztály + saját gázkazán — alacsony rezsi.</li>
+          <li>+100 m² beépíthető tetőtér (~214 m² potenciál).</li>
+          <li>PTE és 4000+ külföldi hallgató közelsége — tartós kereslet.</li>
+          <li>Déli tájolás, egész napos természetes fény.</li>
+          <li>Alacsony közös költség (~20 000 Ft/hó).</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Figyelembe veendő <span class="badge warn">tényezők</span></h3>
+        <ul class="clean warn">
+          <li>Utcafront homlokzat felújításra szorul (közös, társasházi döntés).</li>
+          <li>Erkély / terasz nincs.</li>
+          <li>2006 óta nem volt felújítás — kozmetikai frissítés javasolt.</li>
+          <li>Tetőtér-beépítés: engedélyezés és kivitelezés tervezendő költség.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Pécs, Hungária utca 28–30., 1. emelet · Prémium belvárosi ingatlan adatlap ·
+  Készült: nyomtatásbarát, egyetlen HTML fájl, külső függőség nélkül.
+</footer>
+
+</body>
+</html>
