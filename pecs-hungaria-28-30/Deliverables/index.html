@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Pécs, Hungária utca 28–30. · 1. emelet — 114 m² + 100 m² tetőtér</title>
-<meta name="description" content="Prémium lokáció Pécs belvárosához közel: 114 m² lakás saját lépcsőházzal, 100 m² beépíthető tetőtérrel, zárt udvari parkolóval, A energetikai osztály." />
+<title>Pécs, Hungária utca 28–30. · 1. emelet — 114 m² + 95 m² padlástér (tervezet)</title>
+<meta name="description" content="Forrás-ellenőrzött tervezet: 114 m² lakás (3 szoba) saját lépcsőházzal és 95 m² padlástérrel Pécsett, a Hungária utca 28–30. alatt; műemléki és társasházi jogi jelleg." />
 <style>
   :root{
     --bg:#0e1116;
@@ -37,6 +37,13 @@
   a:hover{text-decoration:underline}
   .wrap{max-width:var(--maxw); margin:0 auto; padding:28px 22px}
 
+  /* DRAFT BAR */
+  .draft-bar{
+    background:rgba(245,158,11,.12); border-bottom:1px solid rgba(245,158,11,.35);
+    color:#fcd9a0; font-size:13px; padding:10px 22px; text-align:center;
+  }
+  .draft-bar strong{color:#ffe2b0}
+
   /* HEADER */
   header.hero{
     padding:48px 22px 28px;
@@ -65,6 +72,22 @@
   }
   .chip.accent{ border-color:rgba(212,162,75,.35); color:var(--accent) }
   .chip .dot{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+
+  /* SOURCE STATUS BADGES */
+  .src{
+    display:inline-block; margin-left:6px; padding:1px 7px; border-radius:999px;
+    font-size:10.5px; font-weight:700; letter-spacing:.03em; vertical-align:middle;
+    white-space:nowrap;
+  }
+  .src.off{ background:rgba(74,222,128,.12); color:var(--good); border:1px solid rgba(74,222,128,.28) }
+  .src.own{ background:rgba(152,162,179,.12); color:var(--muted); border:1px solid var(--line) }
+  .src.corr{ background:rgba(212,162,75,.14); color:var(--accent); border:1px solid rgba(212,162,75,.4) }
+  .src.chk{ background:rgba(245,158,11,.12); color:var(--warn); border:1px solid rgba(245,158,11,.35) }
+  .legend{
+    display:flex; flex-wrap:wrap; gap:10px 16px; align-items:center;
+    margin-top:18px; font-size:12px; color:var(--muted);
+  }
+  .legend .src{margin-left:0; margin-right:6px}
 
   /* HIGHLIGHT GRID */
   .stats{
@@ -106,6 +129,7 @@
   }
   .card h3{margin:0 0 10px; font-size:17px}
   .card p{margin:0; color:var(--muted)}
+  .card p + p{margin-top:10px}
 
   /* KV LIST */
   dl.kv{
@@ -141,6 +165,7 @@
     content:"✓"; color:var(--accent); font-weight:700; margin-top:1px;
   }
   ul.clean.warn li::before{content:"!"; color:var(--warn)}
+  ul.clean.idea li::before{content:"·"; color:var(--muted)}
 
   /* FOOTER */
   footer{
@@ -153,7 +178,8 @@
     body{background:#fff; color:#111}
     header.hero, section{border-color:#ddd}
     .card, .stat{background:#fff; color:#111; box-shadow:none; border-color:#ddd}
-    .chip, .badge{background:#fff; color:#111; border-color:#bbb}
+    .chip, .badge, .src{background:#fff; color:#111; border-color:#bbb}
+    .draft-bar{background:#fff; color:#111; border-color:#bbb}
     dl.kv dt{color:#555}
     a{color:#111}
   }
@@ -161,46 +187,58 @@
 </head>
 <body>
 
+<div class="draft-bar">
+  <strong>TERVEZET — forrás-ellenőrzött változat (2026.09.30.).</strong>
+  Hirdetés vagy értékesítés előtt a tulajdonjogi helyzet és a teherbejegyzések jogi ellenőrzése szükséges.
+</div>
+
 <header class="hero">
   <div class="hero-inner">
     <span class="eyebrow">Ingatlan adatlap · Pécs</span>
-    <h1>Hungária utca 28–30., 1. emelet — prémium lokáció,<br/>saját lépcsőházzal és beépíthető tetőtérrel.</h1>
+    <h1>Hungária utca 28–30., 1. emelet — 114 m² lakás<br/>saját lépcsőházzal és 95 m² padlástérrel.</h1>
     <p class="sub">
-      114 m² társasházi lakás <strong>privát bejárattal és saját lépcsőházzal</strong>,
-      100 m² nyers, beépíthető tetőtérrel (~214 m² potenciál),
-      zárt udvari parkolóval, <strong>A energetikai osztállyal</strong> és saját gázkazánnal —
-      Pécs egyik legjobb utcájában, közvetlenül a PTE mellett.
+      Társasházi, <strong>műemléki védelem alatt álló épületben</strong>: 3 szobás, 114 m² lakás, hozzá
+      10,44 m² lépcsőház és a nyilvántartás szerint <strong>95 m² padlástér</strong> (~209 m² potenciális
+      hasznos terület). A megadott adatok szerint déli tájolás, saját gázkazán, A energetikai osztály és zárt
+      udvari parkoló — ezek dokumentummal nem igazoltak.
     </p>
 
     <div class="hero-meta">
-      <span class="chip accent"><span class="dot"></span> Pécs · Belváros-közeli</span>
-      <span class="chip">1. emelet</span>
-      <span class="chip">114 m² + 100 m² tetőtér</span>
-      <span class="chip">Déli tájolás</span>
-      <span class="chip">Zárt udvari parkoló</span>
-      <span class="chip">A energetika</span>
+      <span class="chip accent"><span class="dot"></span> Pécs · belváros-közeli <span class="src own">megadott</span></span>
+      <span class="chip">1. emelet <span class="src off">hivatalos · TL-A3</span></span>
+      <span class="chip">3 szoba <span class="src off">hivatalos · TL-A3</span></span>
+      <span class="chip">Műemléki védelem <span class="src off">hivatalos · TL-A3</span></span>
+      <span class="chip">Déli tájolás <span class="src own">megadott</span></span>
+      <span class="chip">A energetika <span class="src chk">ellenőrizendő</span></span>
+    </div>
+
+    <div class="legend">
+      <span><span class="src off">hivatalos</span>tulajdoni lap alapján igazolt</span>
+      <span><span class="src corr">korrigált</span>a forrás eltér a megadott adattól</span>
+      <span><span class="src own">megadott</span>megadott adat, dokumentummal nem igazolt</span>
+      <span><span class="src chk">ellenőrizendő</span>nyitott kérdés</span>
     </div>
 
     <div class="stats">
       <div class="stat">
         <div class="k">Alapterület</div>
         <div class="v">114 m²</div>
-        <div class="s">1. emelet</div>
+        <div class="s">1. emelet, 3 szoba <span class="src off">hivatalos · TL-A3</span></div>
       </div>
       <div class="stat">
-        <div class="k">Beépíthető tetőtér</div>
-        <div class="v">+100 m²</div>
-        <div class="s">engedély megszerezhető</div>
+        <div class="k">Padlástér</div>
+        <div class="v">95 m²</div>
+        <div class="s">megadott: 100 m² <span class="src corr">korrigált · TL-A3</span></div>
       </div>
       <div class="stat">
         <div class="k">Teljes potenciál</div>
-        <div class="v">~214 m²</div>
-        <div class="s">galériás kialakítás lehetséges</div>
+        <div class="v">~209 m²</div>
+        <div class="s">114 + 95; megadott: ~214 m² <span class="src corr">korrigált</span></div>
       </div>
       <div class="stat">
         <div class="k">Közös költség</div>
         <div class="v">~20 000 Ft/hó</div>
-        <div class="s">alacsony</div>
+        <div class="s">megadott <span class="src own">megadott</span></div>
       </div>
     </div>
   </div>
@@ -211,28 +249,35 @@
   <!-- LOKÁCIÓ -->
   <section>
     <h2><span class="num">01</span>Lokáció és épület</h2>
-    <p class="lede">Pécs egyik legjobb utcája, frissen megújult közterülettel. A Pécsi Tudományegyetem tőszomszédsága
-      stabil bérlői és vevői keresletet biztosít az év minden szakában.</p>
+    <p class="lede">Belváros-közeli lokáció (megadott adat). A közelben 2023–2024-ben valósult meg a Zöld kapu
+      közösségi tér-fejlesztés; az épület a műemléki nyilvántartásban is szerepel. A PTE közelsége és a
+      kereslet megadott adat.</p>
 
     <div class="grid two">
       <div class="card">
         <h3>Cím és környezet</h3>
         <dl class="kv">
-          <div><dt>Cím</dt><dd>Hungária u. 28–30., 1. em.</dd></div>
-          <div><dt>Városrész</dt><dd>Belváros-közeli prémium</dd></div>
-          <div><dt>Tömegközlekedés</dt><dd>143 m-re megálló</dd></div>
-          <div><dt>PTE elérés</dt><dd>Közvetlen kapcsolat</dd></div>
-          <div><dt>Utca állapota</dt><dd>2023-ban megújult</dd></div>
-          <div><dt>Fejlesztés</dt><dd>Zöld kapu projekt</dd></div>
+          <div><dt>Cím</dt><dd>7624 Pécs, Hungária u. 28–30., A. ép. 1. em. 1. <span class="src off">hivatalos · TL-A3</span></dd></div>
+          <div><dt>Városrész</dt><dd>Belváros-közeli <span class="src own">megadott</span></dd></div>
+          <div><dt>Tömegközlekedés</dt><dd>143 m-re megálló <span class="src chk">ellenőrizendő</span></dd></div>
+          <div><dt>PTE elérés</dt><dd>Közvetlen kapcsolat <span class="src own">megadott</span></dd></div>
+          <div><dt>Épület kora</dt><dd>19. sz. második fele <span class="src off">külső forrás · S009</span></dd></div>
+          <div><dt>Jogi jelleg</dt><dd>Műemlék; társasház <span class="src off">hivatalos · TL-A3</span></dd></div>
         </dl>
+        <p style="margin-top:12px;font-size:13px">A megadott 143 m-es megállótávolság nem reprodukálható: a legközelebbi
+          feltérképezett megálló kb. 221 m-re van légvonalban (OpenStreetMap, S012) — mérés szükséges.</p>
       </div>
       <div class="card">
-        <h3>Zöld kapu projekt (2023)</h3>
+        <h3>Zöld kapu projekt (2023–2024) <span class="src corr">korrigált · S005, S006</span></h3>
         <ul class="clean">
-          <li>Új gyalogos sétányok és kerékpárutak.</li>
-          <li>Parkosított, fásított utcakép.</li>
-          <li>Elektromos autó töltőpontok.</li>
-          <li>PTE-hez közvetlen, gyalogos elérés — 4000+ külföldi hallgató aktív bérlői / vevői keresletet generál.</li>
+          <li>Akadálymentes gyalogos sétányok és járdák; ~2000 m² füvesítés, 50+ fa.</li>
+          <li>2 elektromos autótöltő (4 gépjármű egyidejű töltésére) és 13 kerékpártároló.</li>
+          <li>Vállalkozói szerződés: 2023.09.27.; projektzáró esemény: 2024.03.28.</li>
+        </ul>
+        <ul class="clean warn" style="margin-top:8px">
+          <li>A beruházás helye a Hungária u. – Nagy Jenő u. – Petőfi u. által határolt tér (Steinmetz kapitány tér), az épülettől kb. 660 m-re légvonalban (S012) — az ingatlan közvetlen utcaszakaszának megújulása nem igazolt.</li>
+          <li>Kerékpárutat a források nem említenek (a megadott adatban szerepelt), kerékpártárolót igen.</li>
+          <li>PTE: 5553 külföldi hallgató tanul (2025. nov.; a megadott „4000+” elavult alsó becslés) — S007, S008.</li>
         </ul>
       </div>
     </div>
@@ -241,29 +286,29 @@
   <!-- PARAMÉTEREK -->
   <section>
     <h2><span class="num">02</span>Az ingatlan paraméterei</h2>
-    <p class="lede">Ritka adottság: <strong>saját, privát lépcsőház</strong> teszi a lakást szinte
-      önálló házzá egy társasházi épületben.</p>
+    <p class="lede">A tulajdoni lap szerint a lakáshoz <strong>10,44 m² lépcsőház</strong> és
+      <strong>95 m² padlástér</strong> tartozik. Az önálló, privát bejárat jellege megadott adat.</p>
 
     <div class="grid two">
       <div class="card">
         <dl class="kv">
-          <div><dt>Típus</dt><dd>Társasházi lakás</dd></div>
-          <div><dt>Lépcsőház</dt><dd>Saját, privát</dd></div>
-          <div><dt>Emelet</dt><dd>1. emelet</dd></div>
-          <div><dt>Alapterület</dt><dd>114 m²</dd></div>
-          <div><dt>Tetőtér</dt><dd>100 m² (nyers)</dd></div>
-          <div><dt>Potenciál</dt><dd>~214 m²</dd></div>
-          <div><dt>Tájolás</dt><dd>Déli, napsütéses</dd></div>
-          <div><dt>Erkély / terasz</dt><dd>Nincs</dd></div>
+          <div><dt>Típus</dt><dd>Társasházi lakás, 3 szoba <span class="src off">hivatalos · TL-A3</span></dd></div>
+          <div><dt>Lépcsőház</dt><dd>10,44 m² tartozék <span class="src off">hivatalos · TL-A3</span></dd></div>
+          <div><dt>Emelet</dt><dd>1. emelet <span class="src off">hivatalos · TL-A3</span></dd></div>
+          <div><dt>Alapterület</dt><dd>114 m² <span class="src off">hivatalos · TL-A3</span></dd></div>
+          <div><dt>Padlástér</dt><dd>95 m² (megadott: 100 m²) <span class="src corr">korrigált · TL-A3</span></dd></div>
+          <div><dt>Potenciál</dt><dd>~209 m² (megadott: ~214 m²) <span class="src corr">korrigált</span></dd></div>
+          <div><dt>Tájolás</dt><dd>Déli, napsütéses <span class="src own">megadott</span></dd></div>
+          <div><dt>Erkély / terasz</dt><dd>Nincs <span class="src own">megadott</span></dd></div>
         </dl>
       </div>
       <div class="card">
-        <h3>Miért kiemelkedő?</h3>
+        <h3>Kiemelt jellemzők és státuszuk</h3>
         <ul class="clean">
-          <li><strong>Önálló, privát bejárat</strong> — nem osztott lépcsőház más lakóval.</li>
-          <li><strong>Déli tájolás</strong> — természetes fény egész nap.</li>
-          <li><strong>+100 m² bővítési lehetőség</strong> felfelé, a tetőtérben.</li>
-          <li>100+ éves <strong>téglaépület</strong> — szolid szerkezet, kiváló akusztika és termikus inercia.</li>
+          <li><strong>Saját lépcsőház</strong> — a lakáshoz tartozó lépcsőház hivatalos; az önálló, privát bejárat és a kizárólagosság megadott adat.</li>
+          <li><strong>Déli tájolás</strong> — megadott adat.</li>
+          <li><strong>+95 m² padlástér</strong> felfelé — a terület hivatalos; a beépíthetőség ellenőrizendő.</li>
+          <li><strong>Kora eklektikus lakóház, 19. sz. második fele</strong> — műemléki adatbázis (S009, S010); a téglaszerkezet megadott adat.</li>
         </ul>
       </div>
     </div>
@@ -272,20 +317,21 @@
   <!-- MŰSZAKI -->
   <section>
     <h2><span class="num">03</span>Műszaki jellemzők</h2>
-    <p class="lede">Modern energetikai paraméterek egy klasszikus, téglából épült épületben — ritka kombináció.</p>
+    <p class="lede">A műszaki jellemzők a megadott adatlapból származnak; a rendelkezésre álló dokumentumok
+      nem igazolják és nem cáfolják őket.</p>
 
     <div class="grid three">
       <div class="card">
-        <h3>Energetika <span class="badge">A osztály</span></h3>
-        <p>Kiváló hőtechnika, alacsony rezsi. Modern, jó állapotú nyílászárók — <strong>csere nem szükséges</strong>.</p>
+        <h3>Energetika <span class="badge warn">A osztály — ellenőrizendő</span></h3>
+        <p>A megadott A energetikai osztályhoz tanúsítvány nem áll rendelkezésre. Modern, jó állapotú nyílászárók — <strong>csere nem szükséges</strong> (megadott); műemléknél a nyílászárók felújítása/cseréje is engedélyköteles lehet (S011) <span class="src chk">ellenőrizendő</span></p>
       </div>
       <div class="card">
-        <h3>Fűtés</h3>
-        <p>Saját gázkazán, <strong>önálló szabályozás</strong> (nem közös). A lakó maga dönt a fogyasztásról és fűtési menetrendről.</p>
+        <h3>Fűtés <span class="src own">megadott</span></h3>
+        <p>Saját gázkazán, <strong>önálló szabályozás</strong> (nem közös).</p>
       </div>
       <div class="card">
-        <h3>Állapot</h3>
-        <p>2006-ban felújított, azóta <strong>egyetlen személy</strong> lakta — közepes-jó állapot, kozmetikai frissítéssel kiválóan használható.</p>
+        <h3>Állapot <span class="src own">megadott</span></h3>
+        <p>2006-ban felújított, azóta <strong>egyetlen személy</strong> lakta — közepes-jó állapot. A felújítás óta eltelt idő miatt állapotfelmérés javasolt.</p>
       </div>
     </div>
   </section>
@@ -295,46 +341,45 @@
     <h2><span class="num">04</span>Egyéb jellemzők</h2>
     <div class="grid three">
       <div class="card">
-        <h3>Parkolás</h3>
-        <p><strong>Zárt belső udvari parkoló</strong> — belvárosi környezetben ritka és értéknövelő tényező.
-        Biztonságos, az utcai forgalomtól elzárt.</p>
+        <h3>Parkolás <span class="src own">megadott</span></h3>
+        <p><strong>Zárt belső udvari parkoló</strong> (megadott minősítés: ritka, biztonságos). A nyilvántartásban külön önálló ingatlan a garázs (13 m², hrsz. 4464/A/14, B. épület 14. ajtó) <span class="src off">hivatalos · TL-A14</span></p>
+        <p>A parkoló és a garázs kapcsolata, valamint az ajánlatba tartozása <span class="src chk">ellenőrizendő</span>; a garázs tulajdoni lapján teherbejegyzések szerepelnek.</p>
       </div>
       <div class="card">
-        <h3>Közös költség</h3>
-        <p>~<strong>20 000 Ft/hó</strong> — alacsony, kiszámítható. Az önálló gázkazán miatt
-        a fűtés nincs benne közösként.</p>
+        <h3>Közös költség <span class="src own">megadott</span></h3>
+        <p>~<strong>20 000 Ft/hó</strong>. Társasházi kimutatás nem áll rendelkezésre; az „alacsony” minősítés nem mérhető.</p>
       </div>
       <div class="card">
-        <h3>Épület</h3>
-        <p>100+ éves téglaépület. Belső közös területek használtak, de takarítottak.
-        Utcafront felújításra szorul (társasházi projekt kérdése).</p>
+        <h3>Épület <span class="src off">hivatalos · TL-A3</span></h3>
+        <p>Műemléki védelem alatt álló, társasházi lakóépület (a védelem foka ismeretlen). Belső közös területek használtak, de takarítottak; utcafront felújításra szorul <span class="src own">megadott</span></p>
       </div>
     </div>
   </section>
 
   <!-- TETŐTÉR -->
   <section>
-    <h2><span class="num">05</span>Tetőtér — +100 m² potenciál</h2>
-    <p class="lede">A lakás fölötti <strong>100 m² nyers, beépítetlen tetőtér</strong> a kiemelkedő érték- és
-      élettér-növelő tényező. Az engedély megszerezhető, a beépíthetőség szinte a fal/tető határáig kiterjed.</p>
+    <h2><span class="num">05</span>Padlástér (tetőtér) — 95 m² a nyilvántartás szerint</h2>
+    <p class="lede">A lakáshoz a tulajdoni lap szerint <strong>95 m² padlástér</strong> tartozik
+      (megadott: 100 m² nyers, beépítetlen tetőtér). A beépíthetőség és az engedélyezhetőség nem igazolt:
+      az épület műemléki védelem alatt áll, ezért az engedélyezés örökségvédelmi hatósági egyeztetést igényelhet (S011).</p>
 
     <div class="grid two">
       <div class="card">
         <h3>Jelenlegi állapot és lehetőségek</h3>
         <ul class="clean">
-          <li><strong>Nyers, beépítetlen</strong> állapot — szabadon tervezhető alaprajz.</li>
-          <li>Beépítési engedély <strong>megszerezhető</strong>.</li>
-          <li>Beépíthetőség: szinte a <strong>fal/tető határáig</strong>.</li>
-          <li>~<strong>+100 m²</strong> nettó hasznos tér adható hozzá.</li>
+          <li><strong>Nyers, beépítetlen</strong> állapot — megadott adat.</li>
+          <li>Beépítési engedély a megadott közlés szerint <strong>megszerezhető</strong> <span class="src chk">ellenőrizendő</span></li>
+          <li>Beépíthetőség: szinte a <strong>fal/tető határáig</strong> — megadott adat.</li>
+          <li>Terület: 95 m² <span class="src corr">korrigált · TL-A3</span>; a hasznosítható nettó terület felméréssel állapítható meg.</li>
         </ul>
       </div>
       <div class="card">
-        <h3>Használati ötletek</h3>
-        <ul class="clean">
+        <h3>Hasznosítási ötletek <span class="src own">nem ellenőrizendő tény</span></h3>
+        <ul class="clean idea">
           <li>Extra hálószoba(k) — családbővítéshez vagy hallgatói bérléshez.</li>
-          <li>Dolgozószoba, home-office — csendes, felső szint.</li>
+          <li>Dolgozószoba, home-office.</li>
           <li>Vendégszoba / stúdió — akár külön kiadásra.</li>
-          <li><strong>Galériás kialakítás</strong> — látványos, magas belmagasságú tér.</li>
+          <li>Galériás kialakítás.</li>
         </ul>
       </div>
     </div>
@@ -345,25 +390,30 @@
     <h2><span class="num">06</span>Összegzés</h2>
     <div class="grid two">
       <div class="card">
-        <h3>Erősségek <span class="badge">8 kiemelt pont</span></h3>
+        <h3>Erősségek <span class="badge">9 pont, státusszal</span></h3>
         <ul class="clean">
-          <li>Prémium lokáció — Pécs egyik legjobb utcája, friss városfejlesztés.</li>
-          <li>Saját, privát lépcsőház — ritka adottság.</li>
-          <li>Zárt udvari parkoló.</li>
-          <li>A energetikai osztály + saját gázkazán — alacsony rezsi.</li>
-          <li>+100 m² beépíthető tetőtér (~214 m² potenciál).</li>
-          <li>PTE és 4000+ külföldi hallgató közelsége — tartós kereslet.</li>
-          <li>Déli tájolás, egész napos természetes fény.</li>
-          <li>Alacsony közös költség (~20 000 Ft/hó).</li>
+          <li>Belváros-közeli lokáció <span class="src own">megadott</span>; a közeli Zöld kapu-beruházás ténye <span class="src off">külső forrás · S005</span></li>
+          <li>Saját lépcsőház — 10,44 m² tartozék <span class="src off">hivatalos · TL-A3</span></li>
+          <li>Zárt udvari parkoló <span class="src own">megadott</span></li>
+          <li>A energetikai osztály és saját gázkazán <span class="src own">megadott</span></li>
+          <li>95 m² padlástér (~209 m² potenciál) <span class="src off">hivatalos · TL-A3</span>; beépíthetőség <span class="src chk">ellenőrizendő</span></li>
+          <li>PTE: 5553 külföldi hallgató <span class="src off">külső forrás · S007</span>; bérlői/vevői kereslet <span class="src own">megadott</span></li>
+          <li>Déli tájolás <span class="src own">megadott</span></li>
+          <li>Közös költség ~20 000 Ft/hó <span class="src own">megadott</span></li>
+          <li>A lakás tulajdoni lapján nincs teherbejegyzés (2026.09.30.) <span class="src off">hivatalos · TL-A3</span></li>
         </ul>
       </div>
       <div class="card">
         <h3>Figyelembe veendő <span class="badge warn">tényezők</span></h3>
         <ul class="clean warn">
-          <li>Utcafront homlokzat felújításra szorul (közös, társasházi döntés).</li>
-          <li>Erkély / terasz nincs.</li>
-          <li>2006 óta nem volt felújítás — kozmetikai frissítés javasolt.</li>
-          <li>Tetőtér-beépítés: engedélyezés és kivitelezés tervezendő költség.</li>
+          <li>Műemléki védelem: a homlokzat, tetőzet, nyílászárók és bővítés munkái örökségvédelmi eljárást igényelhetnek; a védelem foka nem ismert.</li>
+          <li>Padlástér: 95 m² (nyilvántartás) vs. 100 m² (megadott); az engedélyezhetőség nem igazolt.</li>
+          <li>Utcafront homlokzat felújításra szorul (megadott).</li>
+          <li>Erkély / terasz nincs (megadott).</li>
+          <li>A felújítás 2006-ban történt (megadott); műszaki állapotfelmérés javasolt.</li>
+          <li>A 143 m-es megállótávolság nem reprodukálható (OSM: ~221 m légvonalban).</li>
+          <li>A garázs külön ingatlan, tulajdoni lapján teherbejegyzésekkel; jogi rendezés szükséges, ha az ajánlat része.</li>
+          <li>Hirdetés előtt a tulajdonjogi helyzet és a terhek jogi ellenőrzése, valamint hiteles tulajdoni lap szükséges.</li>
         </ul>
       </div>
     </div>
@@ -371,8 +421,10 @@
 </main>
 
 <footer>
-  Pécs, Hungária utca 28–30., 1. emelet · Prémium belvárosi ingatlan adatlap ·
-  Készült: nyomtatásbarát, egyetlen HTML fájl, külső függőség nélkül.
+  Pécs, Hungária utca 28–30., 1. emelet · Ingatlan adatlap — TERVEZET ·
+  Forrásadatok: tulajdoni lap másolatok (2026.09.30.) és külső források (részletek: adatlap.md, 9. fejezet) ·
+  Térképi távolságok: © OpenStreetMap contributors (ODbL) ·
+  Nyomtatásbarát, egyetlen HTML fájl, külső függőség nélkül.
 </footer>
 
 </body>

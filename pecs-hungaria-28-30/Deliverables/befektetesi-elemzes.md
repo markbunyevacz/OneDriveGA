@@ -1,128 +1,140 @@
 # Pécs, Hungária utca 28–30. — Befektetési és hasznosítási elemzés
 
-> Ez a dokumentum a megadott ingatlan-paraméterek alapján készült, **strukturált**,
-> nem pénzügyi tanácsadási célú elemzés. A konkrét forintösszegeket ahol
-> releváns, **csak képletként/változóként** jelöljük, hogy a helyi piaci árak
-> behelyettesíthetők legyenek.
+> **TERVEZET — forrás-ellenőrzött változat (2026.09.30.).** Strukturált, nem pénzügyi tanácsadási célú elemzés.
+> Konkrét forintösszeg nincs benne: a képletek a helyi piaci adatokkal behelyettesíthetők.
+>
+> **Az állítások státusza:** **IGAZOLT** (hivatalos dokumentum vagy külső forrás) · **KORRIGÁLT** ·
+> **MEGADOTT** (a megadott adatlap közlése, nem igazolt) · **ELLENŐRIZENDŐ** `[NEEDS VERIFICATION]` ·
+> **HIPOTÉZIS** `[ASSUMPTION]` (elemzői feltevés, forrás nélkül). A forráskódok az `adatlap.md` 9. fejezetében vannak.
 
 ---
 
-## 1. Piaci pozicionálás
+## 1. Az elemzést meghatározó tények
 
-A kombináció, amit ez az ingatlan kínál, Pécs piacán **ritka**:
-
-| Tényező | Piaci hatás |
-|---|---|
-| Belváros-közeli prémium lokáció | Felárat von maga után a városi átlaghoz képest. |
-| 2023-as utcafelújítás (Zöld kapu) | A környék értéke tartósan növekszik. |
-| Saját, privát lépcsőház | Házszerű érzet — szegmens-felár. |
-| Zárt udvari parkoló | Belvárosban erős értéknövelő. |
-| A energetikai osztály | Alacsony rezsi — bérleti és eladási előny. |
-| PTE-közelség | Tartós, ciklusfüggetlen bérlői kereslet. |
-
-**Következtetés:** az ingatlan nem egy „átlagos belvárosi lakás”, hanem **szűk
-kínálati szegmensben** (saját lépcsőház + udvari parkoló + A energetika + tetőtér-potenciál)
-szerepel — ez a szegmens jellemzően kevésbé árérzékeny és **jobb megtartja értékét**
-piaci visszaesésekben is.
+| Tény | Státusz / forrás | Hatás az elemzésre |
+|---|---|---|
+| 114 m² lakás, 3 szoba, 1. emelet | **IGAZOLT** — TL-A3 I.1 | az ár/m² és a hozamszámítás alapterülete |
+| 10,44 m² lépcsőház tartozik a lakáshoz | **IGAZOLT** — TL-A3 I.4 | az önálló bejáratú használat alapja; a kizárólagosság **MEGADOTT** |
+| Padlástér: 95 m² (megadott: 100 m²) | **KORRIGÁLT** — TL-A3 I.4 | S3/S4: +95 m², összterület ~209 m²; a nettó hasznos terület felméréssel állapítható meg |
+| Műemléki jogi jelleg | **IGAZOLT** — TL-A3 I.2; S009, S010 | a homlokzat, a tetőzet, a nyílászárók, a belső átalakítások és a bővítés örökségvédelmi eljárást igényelhetnek a védelem fokától függően (S011) → az S2–S4 költsége, időigénye és megvalósíthatósága bizonytalan `[NEEDS VERIFICATION]` |
+| Társasházi jelleg | **IGAZOLT** — TL-A3 I.3 | a lakáshoz tartozó helyiségeket az alapító okirat határozza meg; az okirat nem áll rendelkezésre |
+| A garázs külön önálló ingatlan (13 m², hrsz. 4464/A/14), tulajdoni lapján teherbejegyzésekkel | **IGAZOLT** — TL-A14 | az ajánlatba tartozása nem tisztázott; ha része, külön jogi rendezés kell |
+| A lakás különlapján nincs teherbejegyzés | **IGAZOLT** — TL-A3 III. (2026.09.30.) | — |
+| A PTE-n 5553 külföldi hallgató tanul (2025. nov.); a PTE több mint 25 ezer hallgatójának nagyjából háromnegyede magyar állampolgár | **IGAZOLT** — S007, S008 | a kereslet-hipotézis számszerű kiinduló adatai; magánbérleti piaci adat nincs |
+| Megállótávolság | **ELLENŐRIZENDŐ** — S012 | a megadott 143 m nem reprodukálható (legközelebbi feltérképezett megálló ~221 m légvonalban) |
+| A energetikai osztály, gázkazán, nyílászárók, tájolás, parkoló, közös költség | **MEGADOTT** | nem igazolt bemenetek; az elemzés ezek nélkül is futtatható |
 
 ---
 
-## 2. Hasznosítási forgatókönyvek
+## 2. Piaci pozicionálás (hipotézisek)
+
+A megadott és igazolt adatokból pozicionálási hipotézisek építhetők. Összehasonlító piaci adat (hirdetési és
+tranzakciós) nélkül **nem állíthatók tényként**.
+
+| Tényező | Státusz | Lehetséges hatás — **HIPOTÉZIS** `[ASSUMPTION]` |
+|---|---|---|
+| Belváros-közeli lokáció | **MEGADOTT** | lokációs prémium lehetséges; összehasonlító tranzakciókkal ellenőrizendő |
+| Zöld kapu közösségi tér (kb. 660 m légvonalban, 2023–2024) | beruházás **IGAZOLT** (S005, S006); a közelség közelítő (S012) | a környék vonzerejét növelheti; hatása nem számszerűsített |
+| Saját lépcsőház (10,44 m² tartozék) | **IGAZOLT** | önálló bejáratú használat; az árra gyakorolt hatása nem ismert |
+| Udvari parkoló / garázs | **MEGADOTT** / **ELLENŐRIZENDŐ** | értéknövelő lehet, ha az ajánlat része és tehermentesíthető |
+| A energetikai osztály | **MEGADOTT** | ha igazolt: alacsonyabb üzemeltetési költség várható |
+| PTE-közelség | közelség **MEGADOTT**; a hallgatói létszám **IGAZOLT** | bérlői kereslet lehetséges; a hallgatói létszám nem azonos a magánbérleti kereslettel |
+
+**Következtetés:** az ingatlan jellemzői (3 szoba, 114 m², saját lépcsőház, padlástér, műemléki belvárosi épület)
+célcsoport-specifikus hasznosítást tesznek lehetővé. A piaci ritkaságra, az árprémiumra és az értékmegtartásra
+vonatkozó állításokhoz piaci adat szükséges; ezek ebben az anyagban nem szerepelnek tényként.
+
+---
+
+## 3. Hasznosítási forgatókönyvek
 
 ### A) Saját használat (1 háztartás)
 
-- Célközönség: család vagy tehetősebb egyéni vevő, aki belvárosi otthont keres.
-- Előny: azonnal beköltözhető (kozmetikai frissítés után), A energetika miatt
-  alacsony rezsi, saját gázkazán miatt önálló szabályozás.
-- Felső szint (tetőtér) opcionálisan, későbbi ütemben beépíthető —
-  **fokozatos CAPEX** lehetséges.
+- Célközönség: család vagy egyéni vevő, aki belvárosi otthont keres — `[ASSUMPTION]`.
+- A lakás állapota közepes-jó (**MEGADOTT**); a 2006-os felújítás óta eltelt idő miatt állapotfelmérés javasolt.
+- Fűtés: saját gázkazán, önálló szabályozás (**MEGADOTT**); a rezsiszint az A osztály igazolásáig nem állítható (**ELLENŐRIZENDŐ**).
+- Padlástér: opcionálisan, későbbi ütemben — csak a műemléki és engedélyezési feltételek tisztázása után `[NEEDS VERIFICATION]`.
 
 ### B) Hosszú távú bérlet — PTE hallgatók / oktatók / szakemberek
 
-- Kereslet: 4000+ külföldi hallgató + belföldi hallgatók + PTE-oktatók +
-  egészségügy / kutatás. 143 m-re tömegközlekedés és közvetlen PTE-kapcsolat.
+- Kereslet-kiindulópont: a PTE-n 5553 külföldi hallgató tanul (2025. nov.), a több mint 25 ezer hallgató nagyjából háromnegyede magyar állampolgár (S007).
+  A PTE Nemzetközi Igazgatóságának vezetője szerint a kollégiumi kapacitás bővítése a legsürgetőbb feladatok közé tartozik (S007);
+  magánbérleti piaci adat nincs `[NEEDS VERIFICATION]`.
+- Lehetséges célcsoportok: hallgatók, oktatók, szakemberek — `[ASSUMPTION]`.
 - Kiadási formák:
-  - **Teljes lakás** egy családnak/professzornak (prémium ár).
-  - **Szobakiadás** (3–4 hálószobás kialakítás után) — magasabb hozam,
-    nagyobb menedzsmentigény.
-- Tetőtér beépítése után **jelentősen nő a kiadható szobák száma** és így
-  a bruttó bérleti bevétel is.
+  - **Teljes lakás** egy háztartásnak.
+  - **Szobánkénti kiadás**: 3 szoba igazolt (TL-A3 I.1); további szobák csak a padlástér beépítése után lennének (**ELLENŐRIZENDŐ**) — potenciálisan magasabb bevétel, nagyobb menedzsmentigény `[ASSUMPTION]`.
+- Ha a padlástér beépíthető, a kiadható szobák száma és a bruttó bérleti bevétel nőhet.
 
-### C) Rövid távú / közepes távú bérlet (nem turista szezonfüggő)
+### C) Közepes távú bérlet (1–3 hónap) — hipotézis
 
-- Pécs nem tipikus Airbnb-város, de vannak szezonális események
-  (konferenciák, fesztiválok, PTE nyitási időszakok).
-- Reális hibrid modell: **közepes távú (1–3 hónapos) bérlet**
-  vendégkutatóknak / Erasmus hallgatóknak / projektmunkásoknak — magasabb
-  bruttó ár, mint a hosszú távú, kisebb kihasználtsági kockázat, mint
-  a napi Airbnb-nél.
+- Lehetséges célcsoportok: vendégkutatók, Erasmus- és nyári/téli egyetemi hallgatók, projektmunkások — `[ASSUMPTION]`.
+  Kiindulópont: a PTE nyári és téli egyetemeket kínáló regionális központ (S007).
+- Keresleti és árazási adat nincs, ezért a modell bemeneteit piaci adatból kell meghatározni `[NEEDS VERIFICATION]`.
 
 ### D) Értéknövelő fejlesztés + továbbértékesítés
 
-- **Tetőtér beépítése** + a lakás kozmetikai / részleges felújítása után
-  az ingatlan teljesen új szegmensbe kerülhet:
-  - ~214 m² használható terület saját lépcsőházzal és udvari parkolóval
-    Pécs belvárosához közel — közel „városi ház” kategória.
-- A fejlesztés után **eladás** egy végfelhasználónak (család) — jellemzően
-  a legnagyobb abszolút értéknövekedést adja.
+- **Padlástér-beépítés** (ha megvalósítható) és a lakás részleges felújítása után: ~209 m² (114 + 95) használható terület saját lépcsőházzal.
+  A padlástér nettó hasznosítható területe felméréssel állapítható meg.
+- Az értéknövekedés mértéke nem ismert; a 6. fejezet ROI-képlete piaci adatokkal számolható.
 
 ---
 
-## 3. Érték-komponensek (mi adja az árát)
+## 4. Érték-komponensek
 
-| Komponens | Súly | Megjegyzés |
+| Komponens | Állapot / forrás | Feltételezett irány — **HIPOTÉZIS** |
 |---|---|---|
-| Lokáció (utca + városrész) | ★★★★★ | Pécs egyik legjobb utcája, friss közterület-felújítás. |
-| Méret (114 m²) | ★★★★ | A belvárosi átlag fölött. |
-| Saját lépcsőház | ★★★★ | Ritka, szegmens-felár. |
-| Udvari zárt parkoló | ★★★★ | Belvárosban nagyon értékes. |
-| A energetika + saját kazán | ★★★ | Bérlőnek és vevőnek is előny. |
-| Tetőtér (+100 m², beépíthető) | ★★★★ | Jelentős rejtett érték. |
-| Déli tájolás | ★★ | Kedvező fényviszonyok. |
-| Alacsony közös költség | ★★ | Alacsonyabb fenntartás. |
-| 100+ éves téglaépület | ★★ | Jó szerkezeti minőség, karakter. |
+| Lokáció | **MEGADOTT** | lokációs prémium (+) |
+| Méret (114 m², 3 szoba) | **IGAZOLT** | összehasonlító adat nélkül nem számszerűsíthető |
+| Saját lépcsőház | **IGAZOLT** (tartozék) | (+) |
+| Udvari parkoló / garázs | **MEGADOTT** / **ELLENŐRIZENDŐ** | (+), ha az ajánlat része és tehermentes |
+| A energetika és saját kazán | **MEGADOTT** | (+), ha igazolt |
+| Padlástér (95 m²) | terület **IGAZOLT**; beépíthetőség **ELLENŐRIZENDŐ** | opció-érték (+), engedélyezési és költségkockázattal |
+| Déli tájolás | **MEGADOTT** | (+) |
+| Közös költség ~20 000 Ft/hó | **MEGADOTT** | az „alacsony” minősítés nem mérhető |
+| Műemléki, 19. sz.-i épület | **IGAZOLT** | karakter (+) és engedélyezési korlátok (−) egyszerre |
 
-Csökkentő tényezők: utcafront-homlokzat, 2006 óta felújítás hiánya,
-erkély/terasz hiánya.
+Csökkentő tényezők: utcafront-homlokzat felújítási igénye (**MEGADOTT**), a 2006-os felújítás óta eltelt idő (**MEGADOTT**),
+erkély/terasz hiánya (**MEGADOTT**), műemléki korlátok (**IGAZOLT**), a garázs terhei (**IGAZOLT**, ha az ajánlat része).
 
 ---
 
-## 4. Beruházási (CAPEX) szcenáriók
+## 5. Beruházási (CAPEX) szcenáriók
 
-Az alábbi szcenáriókban **csak kategóriák szerepelnek**, nem konkrét forintban —
-helyi kivitelezői ajánlat alapján pontosítandó.
+Az alábbi szcenáriókban **csak kategóriák szerepelnek**, nem konkrét forintösszeg — helyi kivitelezői ajánlat alapján pontosítandó.
 
 ### S1 — Minimális beavatkozás
 - Kozmetikai frissítés (festés, burkolatok frissítése, lámpák, konyhai kiegészítők).
-- Nyílászárók: nem szükséges csere.
-- Fűtés: már önálló.
+- Nyílászárók: csere nem szükséges (**MEGADOTT**); műemléknél a nyílászárók felújítása is engedélyköteles lehet (S011).
+- Fűtés: már önálló (**MEGADOTT**).
 - **Cél:** azonnali beköltözhetőség / hosszú távú bérbeadás.
 
 ### S2 — Lakás modernizáció
 - Fürdőszoba(k) és konyha részleges felújítása.
 - Elektromos hálózat átvizsgálása és szükség szerinti modernizálás.
 - Padló részleges cseréje.
-- **Cél:** prémium bérleti ár vagy gyors újraértékesítés.
+- Műemléknél a belső felületek, az alaprajz és az épületgépészet átalakítása is engedélyköteles lehet a védelem fokától függően (S011) `[NEEDS VERIFICATION]`.
+- **Cél:** magasabb bérleti díj vagy újraértékesítés.
 
-### S3 — Tetőtér beépítés
-- Engedélyezés (társasházi hozzájárulás + építési engedély).
+### S3 — Padlástér-beépítés
+- Engedélyezés: örökségvédelmi hatósági eljárás (a védelem foka szerint), építési hatósági eljárás, a társasházi alapító okirat és döntések vizsgálata `[NEEDS VERIFICATION]`.
+  Az S011 szerint a kérelemhez tervdokumentáció, állapotdokumentáció és építéstörténeti dokumentáció/értékleltár kell; az ügyintézési határidő 25 nap.
 - Statikai felmérés.
 - Tetőszerkezet, hőszigetelés, tetőablakok.
 - Gépészet (fűtés-vízvezeték felvezetése, elektromos).
 - Belső szerkezet, válaszfalak, burkolatok.
-- **Cél:** ~+100 m² új, magas értékű hasznos terület, ~214 m² összterület.
+- **Cél:** ~+95 m² (nyilvántartás szerint) új hasznos terület, ~209 m² összterület.
 
 ### S4 — Teljes projekt (S2 + S3 egy menetben)
-- Egy építkezési fázis, kevesebb összes kivitelezési többletköltség,
-  hosszabb „üresjárat” a fejlesztés alatt.
-- **Cél:** az ingatlan új szegmensbe emelése és prémium áron történő
-  kiadása vagy értékesítése.
+- Egy építkezési fázis: potenciálisan kisebb összes kivitelezési többletköltség, hosszabb üresjárat a fejlesztés alatt `[ASSUMPTION]`.
+- **Cél:** a nagyobb hasznos területű ingatlan kiadása vagy értékesítése.
 
 ---
 
-## 5. Pénzügyi modellezés — képletek
+## 6. Pénzügyi modellezés — képletek
 
-Helyi piaci paraméterekkel behelyettesítendő.
+Helyi piaci paraméterekkel behelyettesítendő. Kiinduló értékreferenciát független piaci értékbecslés adhat
+`[NEEDS VERIFICATION]`; ebben az anyagban nincs ár- vagy hozamadat.
 
 **Bruttó bérleti hozam (Gross Yield):**
 
@@ -140,61 +152,63 @@ Nettó hozam = (Éves bérleti bevétel
               / (Vételár + CAPEX) × 100 %
 ```
 
-**Tetőtér-beépítés értéknövelő mutatója:**
+**Padlástér-beépítés értéknövelő mutatója:**
 
 ```
-ROI_tetőtér = (Új piaci érték fejlesztés után
-               − Fejlesztés előtti piaci érték
-               − Tetőtér CAPEX)
-              / Tetőtér CAPEX
+ROI_padlástér = (Új piaci érték fejlesztés után
+                 − Fejlesztés előtti piaci érték
+                 − Padlástér CAPEX)
+                / Padlástér CAPEX
 ```
 
 **Érzékenységi paraméterek, amiket érdemes változtatni:**
-- bérleti ár / m² (PTE-szezon vs. hosszú távú átlag),
-- kihasználtsági ráta (hosszú táv: 95 %+, közepes táv: 70–85 %),
-- CAPEX szóródás (S1 / S2 / S3 / S4),
+- bérleti ár / m² (tanéven belüli és tanéven kívüli időszak, hosszú és közepes táv külön),
+- kihasználtsági ráta (hosszú és közepes távú modellben külön; az értékek piaci adatból határozandók meg, jelenleg nincs adat `[ASSUMPTION]`),
+- CAPEX szóródás (S1 / S2 / S3 / S4), a műemléki engedélyezési kockázattal,
+- a padlástér hasznosítható nettó területe (95 m² a nyilvántartás szerinti érték),
 - kilépési hozamelvárás (cap rate) az eladási érték becsléséhez.
 
 ---
 
-## 6. Kockázatok és mérséklésük
+## 7. Kockázatok és mérséklésük
 
 | Kockázat | Mérséklés |
 |---|---|
-| Utcafront homlokzat felújítási költsége | Társasházi döntés vizsgálata; várható felújítási alap és ütemezés kérdezése. |
-| Tetőtér-engedélyezés csúszása | Előzetes egyeztetés építési hatósággal; feltételes adásvétel; ütemtartalék. |
-| Egyetemi szezonalitás a bérlet esetén | Vegyes portfólió (PTE hallgatók + oktatók + vendégkutatók); min. 10 hónapos szerződések. |
-| 2006 óta felújítás hiánya | Műszaki állapotfelmérés a vásárlás előtt (villamos, víz, gépészet). |
-| Makrokörnyezeti kamat / ingatlanpiaci ciklus | Hosszú távú tartás tervezése; a lokáció és adottságok tompítják a volatilitást. |
+| Műemléki engedélyezés (homlokzat, tetőzet, nyílászárók, bővítés, belső átalakítás) | Előzetes egyeztetés az illetékes örökségvédelmi hatósággal; a védelem fokának és a nevesített értékeknek a lekérdezése; műemléki tapasztalattal rendelkező tervező (S011) |
+| Padlástér: terület (95 vs. 100 m²) és hasznosítható nettó terület | Helyszíni felmérés |
+| Padlástér: az engedély elutasítása vagy csúszása — az S011 szerint a hatóság elutasítja a kérelmet, ha a tevékenység szakszerűtlen, a műemlék jellegét sértő módon változtatja meg vagy épségét veszélyezteti | Előzetes egyeztetés; ütemtartalék; a padlástér értékét nem garantált opcióként kezelni |
+| Utcafront homlokzat felújítási költsége (**MEGADOTT**) | Társasházi döntések vizsgálata; felújítási alap és ütemezés kérdezése; a műemléki eljárás miatti engedélyezési idő beszámítása |
+| Egyetemi szezonalitás a bérletnél `[ASSUMPTION]` | Vegyes célcsoport (hallgatók, oktatók, vendégkutatók); a tanévhez igazodó szerződési idők |
+| A felújítás óta eltelt idő (2006, **MEGADOTT**) | Műszaki állapotfelmérés a vásárlás előtt (villamos, víz, gépészet, nyílászárók) |
+| Jogi és tulajdonjogi státusz; a garázs terhei | Hiteles tulajdoni lap; jogi tanácsadó bevonása az értékesítés előtt |
+| Nem igazolt adatok (A osztály, 143 m, 100 m²) | Energetikai tanúsítvány; távolságmérés; helyszíni felmérés |
+| Makrokörnyezeti kamat / ingatlanpiaci ciklus | Érzékenységvizsgálat (kamat, bérleti díj, kihasználtság); hosszú távú tartás tervezése |
 
 ---
 
-## 7. Ajánlott következő lépések (due diligence)
+## 8. Ajánlott következő lépések (due diligence)
 
-1. **Helyszíni szemle** — tetőtér statikájának és belmagasságának ellenőrzése.
-2. **Társasházi dokumentumok** — SZMSZ, közgyűlési jegyzőkönyvek, felújítási alap,
-   utcafront-felújítási tervek.
-3. **Építési hatóság** — előzetes állásfoglalás a tetőtér-beépítés feltételeiről.
-4. **Műszaki állapotfelmérés** — elektromos, víz, gépészet, nyílászárók állapota
-   (bár elmondás szerint jók).
+1. **Jogi ellenőrzés** — tulajdonjogi helyzet és teherbejegyzések; hiteles (E-hiteles) tulajdoni lap; a garázs terheinek tisztázása, ha az ajánlat része.
+2. **Műemléki egyeztetés** — a védelem foka, a nevesített műemléki értékek, az illetékes örökségvédelmi hatóság előzetes álláspontja (S011).
+3. **Társasházi dokumentumok** — alapító okirat (helyiségek, padlástér), SZMSZ, közgyűlési jegyzőkönyvek, felújítási alap, utcafront-felújítási tervek, közös költség igazolása.
+4. **Helyszíni felmérés** — a padlástér területe (95 vs. 100 m²), statikája és belmagassága; műszaki állapotfelmérés (elektromos, víz, gépészet, nyílászárók).
 5. **Energetikai tanúsítvány** — az A osztály megerősítése friss tanúsítvánnyal.
-6. **Piaci összehasonlítás** — Hungária utca és közvetlen környéke elmúlt 12–24
-   havi tranzakciós adatai (m² ár, kínálati vs. tranzakciós).
-7. **Kivitelezői ajánlat** — S1 / S2 / S3 / S4 szcenáriókra, hogy a pénzügyi
-   modell képletei behelyettesíthetők legyenek.
+6. **Tömegközlekedési távolság** mérése (megadott 143 m vs. ~221 m légvonalban az OSM alapján).
+7. **Piaci összehasonlítás** — Hungária utca és közvetlen környéke elmúlt 12–24 havi tranzakciós adatai (m² ár, kínálati vs. tranzakciós).
+8. **Kivitelezői ajánlat** — S1 / S2 / S3 / S4 szcenáriókra, hogy a pénzügyi modell képletei behelyettesíthetők legyenek.
 
 ---
 
-## 8. Összegzés
+## 9. Összegzés
 
-A Hungária utca 28–30. alatti ingatlan több, egyenként is értékes tényezőt kombinál
-(lokáció, saját lépcsőház, udvari parkoló, A energetika, tetőtér-potenciál,
-PTE-közelség), és a kombináció **Pécs piacán ritka**. A tetőtér beépítésével
-az ingatlan egy kategóriát tud ugrani, és akár **~214 m² hasznos területű,
-saját lépcsőházas, belvárosi, udvari parkolós** objektummá válhat — ez a szegmens
-strukturálisan kínálathiányos.
+A dokumentumok az ingatlan fizikai és jogi alapadatait igazolják: 114 m², 3 szoba, 10,44 m² lépcsőház, 95 m² padlástér,
+társasházi és műemléki jelleg, valamint az, hogy a lakás különlapján nincs teherbejegyzés (2026.09.30.). A többi jellemző
+(A osztály, gázkazán, nyílászárók, tájolás, parkoló, közös költség, a lokáció minősítése) megadott adat, dokumentummal nem igazolt.
 
-A helyes stratégia a vevő céljától függ:
-- **Saját használat:** S1 + opcionális S3 később.
-- **Bérlet-fókuszú befektetés:** S2, majd S3 — PTE-keresletre optimalizált szobakiosztással.
-- **Fejlesztő-exit:** S4 egyben, majd értékesítés prémium végfelhasználónak.
+A padlástér a legnagyobb opció, de a beépíthetőség és az engedélyezhetőség — különösen a műemléki jelleg miatt — nem
+igazolt, ezért az értékét bizonytalan opcióként érdemes kezelni.
+
+A stratégia a cél szerint:
+- **Saját használat:** S1, majd opcionálisan S3 az engedélyezési feltételek tisztázása után.
+- **Bérlet-fókuszú befektetés:** S2, majd S3 (ha megvalósítható) — a PTE-keresletre optimalizált szobakiosztással `[ASSUMPTION]`.
+- **Fejlesztő-exit:** S4 egyben, ha az engedélyezhetőség igazolt; ezt követően értékesítés.

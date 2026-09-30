@@ -1,73 +1,135 @@
 # Pécs, Hungária utca 28–30., 1. emelet — Ingatlan Adatlap
 
-> Prémium lokáció, saját lépcsőház, 114 m² lakás + 100 m² nyers tetőtér (~214 m² potenciál), A energetikai osztály, zárt udvari parkoló.
+> **TERVEZET — forrás-ellenőrzött változat (ellenőrzés napja: 2026.09.30.).**
+> Minden sor jelzi, hogy az adat hivatalos dokumentumból igazolt, korrigált, csak megadott vagy ellenőrizendő.
+>
+> **Röviden:** 114 m² lakás (3 szoba), hozzá 10,44 m² lépcsőház és a nyilvántartás szerint **95 m²** padlástér
+> (a megadott 100 m² helyett) → ~**209 m²** potenciális hasznos terület. Társasházi és **műemléki** jogi jelleg.
+> A lakás tulajdoni lapján a III. részben (terhek) nincs bejegyzés (2026.09.30-i szemle). Hirdetés vagy
+> értékesítés előtt a tulajdonjogi helyzet és a teherbejegyzések jogi ellenőrzése szükséges.
+
+## Jelmagyarázat
+
+| Jelölés | Jelentés |
+|---|---|
+| **IGAZOLT** | Hivatalos dokumentum (tulajdoni lap) vagy külső források alátámasztják. |
+| **KORRIGÁLT** | A forrás eltér a megadott adattól; a forrás szerinti érték szerepel, mellette az eredeti megadott érték. |
+| **MEGADOTT** | A megadott adatlap közlése; a rendelkezésre álló források nem igazolják és nem cáfolják. |
+| **ELLENŐRIZENDŐ** | Nyitott kérdés vagy ellentmondás — `[NEEDS VERIFICATION]`. |
+
+Forráskódok: `TL-A3` (a lakás tulajdoni lapja), `TL-A14` (a garázs tulajdoni lapja), `S003`–`S012`: lásd a 9. fejezetet.
 
 ---
 
-## 1. Lokáció és épület
+## 1. Hivatalos nyilvántartási adatok (új)
 
-| Paraméter | Érték |
-|---|---|
-| **Cím** | Pécs, Hungária utca 28–30., 1. emelet |
-| **Városrész** | Belváros-közeli prémium lokáció, Pécs egyik legjobb utcája |
-| **Környezet** | 2023-ban megújult utca (Zöld kapu projekt) — új sétányok, kerékpárutak, parkosítás, EV-töltők |
-| **Tömegközlekedés** | 143 méterre megálló, közvetlen PTE-összeköttetés |
-| **Épület kora** | 100+ éves téglaépület |
-| **Épület állapota** | Utcafront felújításra szorul, belső közös területek használtak de takarítottak |
-| **Egyetemi közelség** | Pécsi Tudományegyetem közvetlen közelében; 4000+ külföldi hallgató aktív bérlői/vevői kereslettel |
+| Paraméter | Érték | Státusz / forrás |
+|---|---|---|
+| **Helyrajzi szám** | Pécs, belterület 4464/A/3 | **IGAZOLT** — TL-A3 |
+| **Cím** | 7624 Pécs, Hungária utca 28–30., A. épület, 1. emelet 1. ajtó | **IGAZOLT** — TL-A3 (fejléc) |
+| **Rendeltetés** | lakás, társasházi különlap | **IGAZOLT** — TL-A3 I.1, I.3 |
+| **Alapterület** | 114 m² | **IGAZOLT** — TL-A3 I.1; a közjegyzői okirat is 114 m²-t említ (S003) |
+| **Szobák / félszobák** | 3 / 0 | **IGAZOLT** — TL-A3 I.1 |
+| **Eszmei hányad** | 11414/77157 | **IGAZOLT** — TL-A3 I.1 |
+| **Jogi jelleg** | Műemlék; Társasház | **IGAZOLT** — TL-A3 I.2–I.3 |
+| **Lépcsőház** | 10,44 m² lépcsőház tartozik a lakáshoz | **IGAZOLT** — TL-A3 I.4 |
+| **Padlástér** | 95 m² | **KORRIGÁLT** — TL-A3 I.4 (megadott: 100 m²) |
+| **Terhek (III. rész)** | a lakás különlapján nincs bejegyzés | **IGAZOLT** — TL-A3 III. (2026.09.30-i szemle) |
+| **A forrás jellege** | szemle-másolat (csak a fennálló bejegyzések), elektronikusan hitelesítve; a dokumentum szerint kinyomtatva nem hiteles | TL-A3, TL-A14 — hiteles (E-hiteles) másolat beszerzése javasolt a tranzakció előtt |
 
-## 2. Az ingatlan paraméterei
+## 2. Lokáció és épület
 
-| Paraméter | Érték |
-|---|---|
-| **Típus** | Társasházi lakás, saját lépcsőházzal (önálló, privát bejárat) |
-| **Emelet** | 1. emelet |
-| **Alapterület** | 114 m² |
-| **Tetőtér** | 100 m² nyers, beépítetlen — engedély megszerezhető, szinte a falig/tetőig beépíthető |
-| **Összes potenciális terület** | ~214 m² |
-| **Tájolás** | Déli, napsütéses |
-| **Erkély / terasz** | Nincs |
+| Paraméter | Érték | Státusz / forrás |
+|---|---|---|
+| **Cím** | Pécs, Hungária utca 28–30., 1. emelet | **IGAZOLT** — lásd 1. fejezet |
+| **Városrész** | Belváros-közeli prémium lokáció, Pécs egyik legjobb utcája | **MEGADOTT** — minősítő vélemény, nem mérhető |
+| **Környezet — Zöld kapu projekt** | A Hungária u. – Nagy Jenő u. – Petőfi u. által határolt közösségi tér (Steinmetz kapitány tér) megújítása: vállalkozói szerződés 2023.09.27., projektzáró esemény 2024.03.28.; akadálymentes gyalogos sétányok és járdák, ~2000 m² füvesítés, 50+ fa, 2 elektromos autótöltő (4 gépjármű egyidejű töltése), 13 kerékpártároló | **KORRIGÁLT** — S005, S006. Megadott: „2023-ban megújult utca … kerékpárutak”. A források kerékpárutat nem említenek, kerékpártárolót igen; a megújulás 2023–2024 |
+| **Környezet — távolság a beruházástól** | kb. 660 m légvonalban (a terület geokódolt pontja az épülettől; közelítő) | **ELLENŐRIZENDŐ** — S012. Az ingatlan közvetlen utcaszakaszának megújulása nem igazolt |
+| **Tömegközlekedés** | 143 méterre megálló; közvetlen PTE-összeköttetés | **ELLENŐRIZENDŐ** — S012: a legközelebbi feltérképezett megálló kb. 221 m-re van légvonalban, a 143 m nem reprodukálható. A PTE-összeköttetés **MEGADOTT** (kontextus: a Zöld kapu-terület a „Kelet-nyugati közösségi közlekedési tengely” végállomásához kapcsolódik, cél a Belváros és az egyetemi Campus összekötése — S005, S006) |
+| **Épület kora** | 100+ éves; a műemléki adatbázis szerint kora eklektikus lakóház, 19. sz. második fele | **IGAZOLT** (kor) — S009, S010, TL-A3 I.2. A téglaszerkezet **MEGADOTT** |
+| **Műemléki védelem** | Hungária u. 28. (törzsszám 22) és 30. (törzsszám 23): „Műemléki védelem”, hrsz. 4464 | **IGAZOLT** — TL-A3 I.2, S009, S010. A védelem foka és a nevesített értékek nem ismertek |
+| **Épület állapota** | Utcafront felújításra szorul, belső közös területek használtak de takarítottak | **MEGADOTT**. A műemléki adatbázis 2010-es állapotjelentése: „Elhanyagolt épület … tatarozni kellene” (S009, S010) — elavult lehet |
+| **Egyetemi közelség** | PTE közvetlen közelében; a PTE-n 5553 külföldi hallgató tanul (2025. nov.), a PTE oldala „több mint 5600”-at említ | **KORRIGÁLT** — S007, S008: a megadott „4000+” elavult alsó becslés. A közelség és az aktív bérlői/vevői kereslet **MEGADOTT** |
 
-## 3. Műszaki jellemzők
+## 3. Az ingatlan paraméterei
 
-| Paraméter | Érték |
-|---|---|
-| **Fűtés** | Saját gázkazán (önálló szabályozás, nem közös) |
-| **Nyílászárók** | Modern, jó állapotú — csere nem szükséges |
-| **Energetikai besorolás** | **A osztály** (kiváló) |
-| **Lakás állapota** | 2006-ban felújított, azóta egyetlen személy lakta — közepes-jó állapot |
+| Paraméter | Érték | Státusz / forrás |
+|---|---|---|
+| **Típus** | Társasházi lakás, saját lépcsőházzal (önálló, privát bejárat) | **IGAZOLT** (társasházi lakás, lépcsőház-tartozék) — TL-A3 I.1, I.3, I.4. Az önálló, privát bejárat **MEGADOTT** |
+| **Emelet** | 1. emelet | **IGAZOLT** — TL-A3 (fejléc) |
+| **Alapterület** | 114 m² | **IGAZOLT** — TL-A3 I.1 |
+| **Tetőtér (padlástér)** | 95 m² nyers, beépítetlen — engedély megszerezhető, szinte a falig/tetőig beépíthető | **KORRIGÁLT** (terület) — TL-A3 I.4; megadott: 100 m². Az állapot és a beépíthetőség **MEGADOTT**, lásd 6. fejezet |
+| **Összes potenciális terület** | ~209 m² (114 + 95); a 10,44 m² lépcsőház nem szerepel az összegben | **KORRIGÁLT** — számított; megadott: ~214 m² (114 + 100) |
+| **Tájolás** | Déli, napsütéses | **MEGADOTT** |
+| **Erkély / terasz** | Nincs | **MEGADOTT** — a nyilvántartás nem tünteti fel, a hiány nem bizonyíték |
 
-## 4. Egyéb jellemzők
+## 4. Műszaki jellemzők
 
-| Paraméter | Érték |
-|---|---|
-| **Parkolás** | Zárt belső udvari parkoló (ritka, biztonságos) |
-| **Közös költség** | ~20 000 Ft/hó (alacsony) |
-| **Lépcsőház** | Saját, privát — nem osztott más lakással |
+| Paraméter | Érték | Státusz / forrás |
+|---|---|---|
+| **Fűtés** | Saját gázkazán (önálló szabályozás, nem közös) | **MEGADOTT** |
+| **Nyílászárók** | Modern, jó állapotú — csere nem szükséges | **MEGADOTT**. Műemléknél a nyílászárók felújítása/cseréje is engedélyköteles lehet (S011) — `[NEEDS VERIFICATION]` |
+| **Energetikai besorolás** | A osztály | **MEGADOTT** — **ELLENŐRIZENDŐ**: a tanúsítvány azonosítója/másolata nem áll rendelkezésre |
+| **Lakás állapota** | 2006-ban felújított, azóta egyetlen személy lakta — közepes-jó állapot | **MEGADOTT** |
 
-## 5. Tetőtér részletei
+## 5. Egyéb jellemzők
 
-- **Jelenlegi állapot:** nyers, beépítetlen.
-- **Beépítési engedély:** megszerezhető.
-- **Beépíthetőség:** szinte teljes területen lehetséges (fal/tető határáig).
-- **Potenciális felhasználás:** extra szoba(k), dolgozószoba, vendégszoba, galériás kialakítás.
+| Paraméter | Érték | Státusz / forrás |
+|---|---|---|
+| **Parkolás** | Zárt belső udvari parkoló. A nyilvántartásban külön önálló ingatlan a garázs: hrsz. 4464/A/14, 13 m², B. épület 14. ajtó, eszmei hányad 1276/77157 | A parkoló **MEGADOTT**; a garázs adatai **IGAZOLT** (TL-A14 I.1). A kettő kapcsolata **ELLENŐRIZENDŐ**: a garázs tulajdoni lapján teherbejegyzések szerepelnek (a részletek nem nyilvánosak) |
+| **Közös költség** | ~20 000 Ft/hó | **MEGADOTT** — társasházi kimutatás nincs |
+| **Lépcsőház** | Saját, privát — nem osztott más lakással | A lakáshoz tartozó 10,44 m² lépcsőház **IGAZOLT** (TL-A3 I.4); a kizárólagosság **MEGADOTT** (alapító okirat szükséges) |
+
+## 6. Tetőtér (padlástér) részletei
+
+- **Jelenlegi állapot:** nyers, beépítetlen — **MEGADOTT**.
+- **Terület:** 95 m² a nyilvántartás szerint (TL-A3 I.4), a megadott érték 100 m² — **KORRIGÁLT**; helyszíni felmérés szükséges.
+- **Beépítési engedély:** a megadott közlés szerint megszerezhető — **ELLENŐRIZENDŐ** `[NEEDS VERIFICATION]`:
+  az épület műemlék; az örökségvédelmi engedély szükségessége a védelem fokától és a nevesített műemléki értékektől függ,
+  a hatóság a méltó használatot, az illeszkedést és a hagyományos anyaghasználatot is mérlegeli (S011). Emellett a
+  társasházi alapító okirat és a társasházi döntések vizsgálata, valamint az építési hatósági eljárás szükséges.
+- **Beépíthetőség:** szinte teljes területen lehetséges (fal/tető határáig) — **MEGADOTT**, nem igazolt.
+- **Potenciális felhasználás (hasznosítási ötlet, nem ellenőrizendő tény):** extra szoba(k), dolgozószoba, vendégszoba, galériás kialakítás.
 
 ---
 
-## 6. Összefoglaló erősségek
+## 7. Összefoglaló erősségek (státusszal)
 
-1. **Prémium lokáció** — Pécs egyik legjobb utcája, friss városfejlesztés (Zöld kapu).
-2. **Saját, privát lépcsőház** — rendkívül ritka társasházi adottság, diszkréció és biztonság.
-3. **Zárt udvari parkoló** — belvárosban erősen értéknövelő tényező.
-4. **A energetikai osztály + saját gázkazán** — alacsony rezsi, önálló szabályozás.
-5. **214 m² potenciál** — a 100 m² beépíthető tetőtér szinte megduplázza a használható területet.
-6. **Egyetemi közelség** — tartós bérlői kereslet (PTE + 4000+ külföldi hallgató).
-7. **Déli tájolás** — természetes fény egész nap.
-8. **Alacsony közös költség** — ~20 000 Ft/hó.
+1. **Belváros-közeli lokáció** — **MEGADOTT**. A közelben megvalósult közösségi tér-fejlesztés (Zöld kapu) ténye **IGAZOLT** (S005, S006); a közelség kb. 660 m légvonal (S012).
+2. **Saját lépcsőház** — a lakáshoz tartozó 10,44 m² lépcsőház **IGAZOLT** (TL-A3 I.4); az önálló, privát jelleg **MEGADOTT**.
+3. **Zárt udvari parkoló** — **MEGADOTT**; a nyilvántartott garázzsal való kapcsolata **ELLENŐRIZENDŐ**.
+4. **A energetikai osztály és saját gázkazán** — **MEGADOTT**, nem igazolt.
+5. **Padlástér-potenciál** — 95 m² a nyilvántartás szerint (a lakás alapterületének ~83%-a, számított); ~209 m² összesen. A beépíthetőség **ELLENŐRIZENDŐ**.
+6. **Egyetemi közelség** — a PTE-n 5553 külföldi hallgató tanul (**IGAZOLT**, S007/S008); a bérlői/vevői kereslet **MEGADOTT**.
+7. **Déli tájolás** — **MEGADOTT**.
+8. **Közös költség ~20 000 Ft/hó** — **MEGADOTT**; az „alacsony” minősítés nem mérhető.
+9. **Teher-mentes lakás-különlap** — a III. részben nincs bejegyzés (**IGAZOLT**, TL-A3, 2026.09.30.).
 
-## 7. Figyelembe veendő tényezők
+## 8. Figyelembe veendő tényezők és nyitott kérdések
 
-- Utcafront homlokzat felújításra szorul — közös döntés / társasházi projekt kérdése.
-- Erkély / terasz nincs.
-- 2006 óta felújítás nem történt — kozmetikai frissítés javasolt.
-- Tetőtér beépítés: engedélyezés + kivitelezés tervezendő költség.
+- **Műemléki jelleg** (**IGAZOLT**): a homlokzat, a tetőzet, a nyílászárók és a bővítés tervezett munkái örökségvédelmi hatósági eljárást igényelhetnek; a védelem foka és a nevesített értékek a nyilvántartásból nem derülnek ki (S011) — `[NEEDS VERIFICATION]`.
+- **Padlástér:** 95 m² (nyilvántartás) vs. 100 m² (megadott); az engedélyezhetőség nem igazolt — helyszíni felmérés és előzetes hatósági egyeztetés szükséges.
+- **Utcafront homlokzat** felújításra szorul (**MEGADOTT**); műemléki jelleg miatt a munkák engedélyezési feltételei tisztázandók.
+- **Erkély / terasz** nincs (**MEGADOTT**).
+- **A felújítás 2006-ban történt** (**MEGADOTT**); az azóta eltelt idő miatt műszaki állapotfelmérés javasolt.
+- **Tömegközlekedés:** a 143 m nem reprodukálható (OSM: ~221 m légvonalban) — mérés szükséges.
+- **Garázs / parkolás:** a garázs külön ingatlan, tulajdoni lapján teherbejegyzések szerepelnek; ha az ajánlat része, külön jogi rendezés kell.
+- **Jogi ellenőrzés:** a tulajdonjogi helyzet és a teherbejegyzések ellenőrzése az értékesítés előtt szükséges; a részletek személyes adatokat tartalmaznak, ezért nem szerepelnek a nyilvános anyagokban.
+- **Hiteles tulajdoni lap** beszerzése javasolt (a rendelkezésre álló példányok szemle-másolatok, kinyomtatva nem hitelesek).
+
+## 9. Források
+
+| Kód | Forrás | Megjegyzés |
+|---|---|---|
+| TL-A3 (S001) | Tulajdonilap-másolat (szemle), Pécs 4464/A/3, 2026.09.30. | hivatalos nyilvántartás (L1) |
+| TL-A14 (S002) | Tulajdonilap-másolat (szemle), Pécs 4464/A/14, 2026.09.30. | hivatalos nyilvántartás (L1) |
+| S003 | Közjegyzői okirat (Pécs), 2026.09.22. | csak a 114 m² és 13 m² keresztellenőrzésére használva |
+| S004 | A megadott ingatlan-adatlap (F0) | nem ellenőrzött közlés |
+| S005 | Pécsi Városfejlesztési Zrt.: „Megtörtént a Zöld kapu projekt műszaki átadása …” (2024.03.28.) — https://pvfzrt.hu/megtortent-a-zold-kapu-projekt-muszaki-atadasa-megujult-a-hungaria-utca-nagy-jeno-utca-petofi-utca-altal-hatarolt-terulet/ | megvalósító szervezet közleménye |
+| S006 | Pécs Megyei Jogú Város: „Zöld kapu projekt” — https://pecs.hu/zold-kapu-projekt/ | önkormányzati oldal |
+| S007 | bama.hu, 2025.11.21.: „Így lett a PTE Magyarország legdiverzebb egyeteme” — https://www.bama.hu/helyi-kozelet/2025/11/egyetem-nemzetkozi-igazgatosag | hírforrás, a PTE Nemzetközi Igazgatóságának vezetőjét idézi |
+| S008 | PTE: „Nemzetközi képzések” — http://pte.hu/hu/oktatas/nemzetkozi-kepzesek | az egyetem hivatalos oldala, dátum nélkül |
+| S009 | Műemlékem.hu, Hungária u. 28. — https://muemlekem.hu/muemlek/show/1695 | műemléki adatbázis |
+| S010 | Műemlékem.hu, Hungária u. 30. — https://www.muemlekem.hu/muemlek/show/1696 | műemléki adatbázis |
+| S011 | Kormányhivatalok: „Tájékoztatás az örökségvédelmi engedélyezési eljárásról – műemlékvédelem” — https://kormanyhivatalok.hu/sites/default/files/2024-06/1.-tajekoztatas-az-oroksegvedelmi-engedelyezesi-eljarasrol-muemlekvedelem.pdf | kormányhivatali tájékoztató (2024-es feltöltés), a 2026-os hatályos állapot nem ellenőrzött |
+| S012 | © OpenStreetMap contributors (ODbL 1.0): Nominatim és Overpass lekérdezés, futás: 2026.09.30.; szkript: `ProcessArtifacts/BuildScripts/osm_proximity_check.py` | közösségi térképadat, a távolságok légvonalbeliek és közelítők |
