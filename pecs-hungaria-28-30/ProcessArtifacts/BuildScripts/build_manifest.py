@@ -20,6 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 SELF_NAME = "Manifest.md"
 PLACEHOLDER = re.compile(r"\b(TODO|TBD|FIXME|XXX)\b")
+PROBLEMS = {"ÜRES", "helykitöltő szöveg maradt", "HTML-szerkezet HIBÁS", "Python-fordítás HIBÁS"}
 
 
 class TagChecker(HTMLParser):
@@ -53,10 +54,10 @@ class TagChecker(HTMLParser):
 
 def package_files():
     def git(*args):
-        return subprocess.run(["git", *args, "--", str(ROOT)], capture_output=True, text=True, cwd=ROOT).stdout.split("\n")
+        result = subprocess.run(["git", *args, "--", "."], capture_output=True, text=True, cwd=ROOT)
+        return result.stdout.split("\n")
     names = {n for n in git("ls-files") + git("ls-files", "--others", "--exclude-standard") if n}
-    base = subprocess.run(["git", "rev-parse", "--show-toplevel"], capture_output=True, text=True, cwd=ROOT).stdout.strip()
-    return sorted(Path(base) / n for n in names if (Path(base) / n).is_file())
+    return sorted(ROOT / n for n in names if (ROOT / n).is_file())
 
 
 def inspect(path: Path):
@@ -108,8 +109,11 @@ def main() -> int:
         size_kb = path.stat().st_size / 1024
         total_kb += size_kb
         total_words += words
-        problems += any(m in check for m in ("HIBÁS", "ÜRES", "helykitöltő"))
+        problems += check in PROBLEMS
         rows.append((rel.name, str(rel.parent) if str(rel.parent) != "." else "(gyökér)", f"{size_kb:.1f}", words, status_for(rel), check))
+
+    if not rows:
+        sys.exit("Hiba: a leltár üres; a git-lista nem adott fájlokat.")
 
     out = ["# Manifest — a csomag fájlleltára\n",
            f"Generálva: {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC · szkript: `BuildScripts/build_manifest.py`. "

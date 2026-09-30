@@ -125,8 +125,8 @@ FORBIDDEN = [
     ("X15", r"tompítják a volatilitást", "A10 - forrás nélküli"),
 ]
 
-SENSITIVE_TERMS = (r"örökhagyó|hagyatékátadó|hagyatéki|özvegyi|végrehajtási|anyja neve|"
-                   r"személyi azonosító|született|bankszámla|értékpapír")
+SENSITIVE_TERMS = (r"\b(?:örökhagyó|hagyatékátadó|hagyatéki|özvegyi|végrehajtási|anyja neve|"
+                   r"személyi azonosító|született|bankszámla|értékpapír)")
 STRUCTURED_PII = [
     ("L01", r"\b[1-8]-\d{6}-\d{4}\b", "személyi azonosító-minta"),
     ("L02", r"\b\d{8}-\d{8}(-\d{8})?\b", "bankszámlaszám-minta"),
