@@ -6,3 +6,7 @@ Sources/*
 # Privát munkafájlok (nem nyilvánosak)
 Private/
 *.pdf
+
+# Python gyorsítótár
+__pycache__/
+*.pyc
