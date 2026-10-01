@@ -45,8 +45,9 @@ a nem tényállítás jellegű hasznosítási ötletek (F0 „Potenciális felha
 | C20 | Közös költség ~20 000 Ft/hó | Cost Estimate | UNVERIFIABLE | — | Társasházi kimutatás nincs | adatlap §5 |
 | C21a | A lakáshoz lépcsőház tartozik | Technical Spec | VERIFIED | S001 I.4 („10.44 nm lépcsőházzal”) | 10,44 m² | adatlap §1, §5; index 02 |
 | C21b | Saját, privát lépcsőház, nem osztott más lakással | Legal Requirement | UNVERIFIABLE | S001 I.3–I.4 (konzisztens) | Az alapító okirat nem áll rendelkezésre | adatlap §3, §5 |
+| C22 | A lakáshoz hatalmas, közös pince tartozik | Technical Spec | UNVERIFIABLE | S004 (kiegészítés, 2026.10.01.); S001 nem tartalmaz pinceterületet | Tulajdonosi közlés. Méret, jogcím és bejárat hiányzik | adatlap §5; index 04; ugynoki-ertekesitesi-tajekoztato.md |
 
-**Összesítés:** VERIFIED: 8 · CORRECTED: 5 · OUTDATED: 1 · UNVERIFIABLE: 18 · REFUTED: 0 · Összesen: 32
+**Összesítés:** VERIFIED: 8 · CORRECTED: 5 · OUTDATED: 1 · UNVERIFIABLE: 19 · REFUTED: 0 · Összesen: 33
 
 ## B. A CORRECTED / OUTDATED állítások részletei (módszertani kötelezettség)
 

@@ -124,3 +124,17 @@ jóváhagyottnak tekinteni a kaput; ezért minden kapu NEM JÓVÁHAGYOTT, a lesz
 4. **Adatvédelmi szétválasztás elfogadása:** a részletes jogi elemzés a repón kívül van; ha másképp kéri, jelezze.
 5. **Nem igazolt adatok pontosítása:** A osztály (tanúsítvány), a 143 m-es megállótávolság, a parkoló és a garázs kapcsolata.
 6. **A repó láthatósága nyilvános.** Érdemes megfontolni, hogy az ilyen csomag privát tárolóba kerüljön.
+
+## 9. Kiegészítés, 2026.10.01. — ügynöki tájékoztató
+
+A kérés: professzionális leírás, amely az értékesítőt a pécsi viszonyok között előnyös pozíció felé viszi, és ahol a tény kérdéses, ott kérdez. Új közlés: a lakáshoz hatalmas, közös pince tartozik.
+
+| Döntés | Választás |
+|---|---|
+| D-14 | A meggyőzés a mért méretkülönbségre és két vevői körre épül (család / befektető), nem kitalált „legjobb utca” vagy hozam állításra |
+| D-15 | A pince megadott adat. A 209 m²-be nem számoljuk, amíg nincs területe. A hirdetésbe „saját pinceként” nem kerül, amíg a jogcím nincs meg |
+| D-16 | A kínálati ár vetítése (kb. 108 M Ft) nagyságrend, nem kikiáltási ár. Az ár a 8. fejezet válaszai előtt nem publikálandó |
+
+A 13 kérdés a `Deliverables/ugynoki-ertekesitesi-tajekoztato.md` 8. fejezetében van. Válasz nélkül a tájékoztató tervezet marad.
+
+A 12,9%-os lakásállomány-arány az S014 oldal saját számainak olvasata (2026.10.01., WebFetch). Az oldal egy mondatban lakóépületnek nevezi a 72 077-et; a fejléc „összes lakás”, és az épületeket külön, 24 819-ként számolja. A KSH-tábla továbbra sincs megnyitva. A Hungária utcai 29,9 M Ft-os, 1 szobás hirdetés ugyanazon az oldalon másik ingatlan, áralapnak nem használtuk.

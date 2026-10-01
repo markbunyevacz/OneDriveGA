@@ -271,11 +271,28 @@ def main() -> int:
     failures += not pii_ok
 
     # ---- 5. aritmetika
+    agent = read(ROOT / "Deliverables" / "ugynoki-ertekesitesi-tajekoztato.md")
+    agent_forbidden = [pat for _, pat, _ in FORBIDDEN if re.search(pat, agent)]
+    stock_sum = 19770 + 42976 + 9331
+    building_sum = 19025 + 2137 + 1610 + 2047
     arithmetic = [
         ("114 + 95 = 209", 114 + 95 == 209),
         ("114 + 100 = 214 (az F0 belső számítása)", 114 + 100 == 214),
         ("(95 - 100) / 100 = -5,0%", round((95 - 100) / 100 * 100, 1) == -5.0),
         ("95 / 114 ≈ 83% (adatlap: ~83%)", round(95 / 114 * 100) == 83),
+        ("19 770 + 42 976 + 9 331 = 72 077", stock_sum == 72077),
+        ("9 331 / 72 077 ≈ 12,9%", round(9331 / 72077 * 100, 1) == 12.9),
+        ("épületszám 19 025 + 2 137 + 1 610 + 2 047 = 24 819", building_sum == 24819),
+        ("114 / 68 − 1 ≈ 68%", round((114 / 68 - 1) * 100) == 68),
+        ("944 000 × 114 ≈ 108 M Ft", round(944_000 * 114 / 1_000_000) == 108),
+        ("989 000 × 114 ≈ 113 M Ft", round(989_000 * 114 / 1_000_000) == 113),
+        ("71,9 M Ft / 944 e Ft ≈ 76 m²", round(71_900_000 / 944_000) == 76),
+        ("ügynöki szöveg: 12,9%", "12,9%" in agent),
+        ("ügynöki szöveg: 24 819", "24 819" in agent),
+        ("ügynöki szöveg: ≈ 108 M Ft", "≈ 108 M Ft" in agent),
+        ("ügynöki szöveg: ≈ 113 M Ft", "≈ 113 M Ft" in agent),
+        ("ügynöki szöveg: ≈ 76 m²", "≈ 76 m²" in agent),
+        ("ügynöki szöveg: tiltott állítás nincs", not agent_forbidden),
     ]
     arith_ok = all(ok for _, ok in arithmetic)
     failures += not arith_ok

@@ -9,6 +9,7 @@ Forrás-ellenőrzött ingatlan-adatlap csomag. **Állapot: TERVEZET** — a lesz
 |---|---|
 | [`Deliverables/index.html`](./Deliverables/index.html) | Reszponzív, egyoldalas, **nyomtatásbarát** adatlap státuszjelölésekkel; külső függőség nélkül megnyitható, böngészőből PDF-be menthető |
 | [`Deliverables/adatlap.md`](./Deliverables/adatlap.md) | Strukturált adatlap: minden sor státusszal és forrással, forrásjegyzékkel |
+| [`Deliverables/ugynoki-ertekesitesi-tajekoztato.md`](./Deliverables/ugynoki-ertekesitesi-tajekoztato.md) | Belső felkészítő értékesítőnek: miért adható el a lakás a pécsi kínálatban, két hirdetési szöveg, kifogáskezelés, és a kérdések, amelyekre válasz kell az ár előtt |
 | [`Deliverables/befektetesi-elemzes.md`](./Deliverables/befektetesi-elemzes.md) | Hasznosítási forgatókönyvek, CAPEX-szcenáriók, képletek, kockázatok, due diligence lépések |
 | [`ProcessArtifacts/`](./ProcessArtifacts/) | Forrásleltár, hiánylista, validált állítások, forrásjegyzék, nyomon követés, terv–tartalom ellenőrzés, spot-check útmutató, folyamatnapló, fájlleltár és a reprodukáló szkriptek |
 | [`Sources/`](./Sources/) | A forrásdokumentumok jegyzéke hash-ekkel; a PDF-ek **nem** kerülnek a repóba |

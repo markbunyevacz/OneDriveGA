@@ -79,6 +79,7 @@ Forráskódok: `TL-A3` (a lakás tulajdoni lapja), `TL-A14` (a garázs tulajdoni
 | **Parkolás** | Zárt belső udvari parkoló. A nyilvántartásban külön önálló ingatlan a garázs: hrsz. 4464/A/14, 13 m², B. épület 14. ajtó, eszmei hányad 1276/77157 | A parkoló **MEGADOTT**; a garázs adatai **IGAZOLT** (TL-A14 I.1). A kettő kapcsolata **ELLENŐRIZENDŐ**: a garázs tulajdoni lapján teherbejegyzések szerepelnek (a részletek nem nyilvánosak) |
 | **Közös költség** | ~20 000 Ft/hó | **MEGADOTT** — társasházi kimutatás nincs |
 | **Lépcsőház** | Saját, privát — nem osztott más lakással | A lakáshoz tartozó 10,44 m² lépcsőház **IGAZOLT** (TL-A3 I.4); a kizárólagosság **MEGADOTT** (alapító okirat szükséges) |
+| **Pince** | Hatalmas, közös pince tartozik a lakáshoz | **MEGADOTT** (2026.10.01., a tulajdonos szava). A tulajdoni lap külön területeként nem szerepel. Méret, kizárólagos használat és bejárat: `[NEEDS VERIFICATION]`. Az ügynöki szöveg: `ugynoki-ertekesitesi-tajekoztato.md` |
 
 ## 6. Tetőtér (padlástér) részletei
 
@@ -133,3 +134,6 @@ Forráskódok: `TL-A3` (a lakás tulajdoni lapja), `TL-A14` (a garázs tulajdoni
 | S010 | Műemlékem.hu, Hungária u. 30. — https://www.muemlekem.hu/muemlek/show/1696 | műemléki adatbázis |
 | S011 | Kormányhivatalok: „Tájékoztatás az örökségvédelmi engedélyezési eljárásról – műemlékvédelem” — https://kormanyhivatalok.hu/sites/default/files/2024-06/1.-tajekoztatas-az-oroksegvedelmi-engedelyezesi-eljarasrol-muemlekvedelem.pdf | kormányhivatali tájékoztató (2024-es feltöltés), a 2026-os hatályos állapot nem ellenőrzött |
 | S012 | © OpenStreetMap contributors (ODbL 1.0): Nominatim és Overpass lekérdezés, futás: 2026.09.30.; szkript: `ProcessArtifacts/BuildScripts/osm_proximity_check.py` | közösségi térképadat, a távolságok légvonalbeliek és közelítők |
+| S014 | Költözzbe: „Pécs ingatlanárak” — https://koltozzbe.hu/ingatlan-statisztikak/pecs (kínálati árak, frissítve 2026.09.26.) | hirdetési átlag és lakásállomány a tájékoztatóban; az oldal a KSH-ra hivatkozik, a KSH-tábla külön nincs megnyitva; a 72 077-et egy mondat lakóépületnek írja, a fejléc és a külön épületszám (24 819) lakásszámként olvastatja |
+| S015 | bama.hu, 2026.05.17.: „Pécsen 170 ezer forint körül alakul a medián bérleti díj” — https://www.bama.hu/helyi-gazdasag/2026/05/pecsen-170-ezer-forint-a-median-berleti-dij | KSH–ingatlan.com lakbérindex, városi medián |
+| S016 | bama.hu, 2026.02.18.: albérletárak Pécsen — https://www.bama.hu/helyi-kozelet/2026/02/alberlet-pecsen-szeged-nyiregyhaza | 180 ezer Ft-os medián és helyi értékesítői nyilatkozat az Egyetemvárosról |
