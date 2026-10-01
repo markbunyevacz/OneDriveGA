@@ -1,6 +1,6 @@
 # Plan-vs-Content — P06 terv-tartalom ellenőrzés
 
-Futás: 2026-10-01 14:08 UTC · szkript: `BuildScripts/plan_vs_content.py` (a kimenet `--write`-tal frissül).
+Futás: 2026-10-01 14:27 UTC · szkript: `BuildScripts/plan_vs_content.py` (a kimenet `--write`-tal frissül).
 
 **Lefedettség: 48/48 = 100.0%** — FULL: 48 · PARTIAL: 0 · MISSING: 0 · DIVERGED: 0
 
@@ -61,7 +61,7 @@ Futás: 2026-10-01 14:08 UTC · szkript: `BuildScripts/plan_vs_content.py` (a ki
 
 | Ellenőrzés | Eredmény | Részlet |
 |---|---|---|
-| Validated-Claims táblázat | PASS | 33 állítás; státuszok: CORRECTED 5, OUTDATED 1, REFUTED 0, UNVERIFIABLE 19, VERIFIED 8 |
+| Validated-Claims táblázat | PASS | 34 állítás; státuszok: CORRECTED 5, OUTDATED 1, REFUTED 0, UNVERIFIABLE 20, VERIFIED 8 |
 | Forráskódok (S0xx) | PASS | 16 regisztrált, 15 hivatkozott |
 | Adatvédelmi lint | PASS | 21 fájl átvizsgálva (azonosító-, számlaszám-, e-mail-minta; érzékeny kifejezések; PDF a verziókövetésben) |
 | Aritmetika | PASS | 114 + 95 = 209: OK; 114 + 100 = 214 (az F0 belső számítása): OK; (95 - 100) / 100 = -5,0%: OK; 95 / 114 ≈ 83% (adatlap: ~83%): OK; 19 770 + 42 976 + 9 331 = 72 077: OK; 9 331 / 72 077 ≈ 12,9%: OK; épületszám 19 025 + 2 137 + 1 610 + 2 047 = 24 819: OK; 114 / 68 − 1 ≈ 68%: OK; 944 000 × 114 ≈ 108 M Ft: OK; 989 000 × 114 ≈ 113 M Ft: OK; 71,9 M Ft / 944 e Ft ≈ 76 m²: OK; ügynöki szöveg: 12,9%: OK; ügynöki szöveg: 24 819: OK; ügynöki szöveg: ≈ 108 M Ft: OK; ügynöki szöveg: ≈ 113 M Ft: OK; ügynöki szöveg: ≈ 76 m²: OK; ügynöki szöveg: tiltott állítás nincs: OK |

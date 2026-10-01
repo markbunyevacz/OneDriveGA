@@ -18,7 +18,7 @@
 | Padlástér: 95 m² (megadott: 100 m²) | **KORRIGÁLT** — TL-A3 I.4 | S3/S4: +95 m², összterület ~209 m²; a nettó hasznos terület felméréssel állapítható meg |
 | Műemléki jogi jelleg | **IGAZOLT** — TL-A3 I.2; S009, S010 | a homlokzat, a tetőzet, a nyílászárók, a belső átalakítások és a bővítés örökségvédelmi eljárást igényelhetnek a védelem fokától függően (S011) → az S2–S4 költsége, időigénye és megvalósíthatósága bizonytalan `[NEEDS VERIFICATION]` |
 | Társasházi jelleg | **IGAZOLT** — TL-A3 I.3 | a lakáshoz tartozó helyiségeket az alapító okirat határozza meg; az okirat nem áll rendelkezésre |
-| A garázs külön önálló ingatlan (13 m², hrsz. 4464/A/14), tulajdoni lapján teherbejegyzésekkel | **IGAZOLT** — TL-A14 | az ajánlatba tartozása nem tisztázott; ha része, külön jogi rendezés kell |
+| A garázs külön önálló ingatlan (13 m², hrsz. 4464/A/14), tulajdoni lapján teherbejegyzésekkel | **IGAZOLT** — TL-A14 | 2026.10.01.: a tulajdonos szerint azonos a zárt udvari parkolóval, és az eladási ár része. A teher a lapon marad; tehermentes átruházás nincs ígérve |
 | A lakás különlapján nincs teherbejegyzés | **IGAZOLT** — TL-A3 III. (2026.09.30.) | — |
 | A PTE-n 5553 külföldi hallgató tanul (2025. nov.); a PTE több mint 25 ezer hallgatójának nagyjából háromnegyede magyar állampolgár | **IGAZOLT** — S007, S008 | a kereslet-hipotézis számszerű kiinduló adatai; magánbérleti piaci adat nincs |
 | Megállótávolság | **ELLENŐRIZENDŐ** — S012 | a megadott 143 m nem reprodukálható (legközelebbi feltérképezett megálló ~221 m légvonalban) |
@@ -36,7 +36,7 @@ tranzakciós) nélkül **nem állíthatók tényként**.
 | Belváros-közeli lokáció | **MEGADOTT** | lokációs prémium lehetséges; összehasonlító tranzakciókkal ellenőrizendő |
 | Zöld kapu közösségi tér (kb. 660 m légvonalban, 2023–2024) | beruházás **IGAZOLT** (S005, S006); a közelség közelítő (S012) | a környék vonzerejét növelheti; hatása nem számszerűsített |
 | Saját lépcsőház (10,44 m² tartozék) | **IGAZOLT** | önálló bejáratú használat; az árra gyakorolt hatása nem ismert |
-| Udvari parkoló / garázs | **MEGADOTT** / **ELLENŐRIZENDŐ** | értéknövelő lehet, ha az ajánlat része és tehermentesíthető |
+| Udvari parkoló / garázs | **MEGADOTT**: az ár része | értéknövelő lehet, ha a teher rendezhető |
 | A energetikai osztály | **MEGADOTT** | ha igazolt: alacsonyabb üzemeltetési költség várható |
 | PTE-közelség | közelség **MEGADOTT**; a hallgatói létszám **IGAZOLT** | bérlői kereslet lehetséges; a hallgatói létszám nem azonos a magánbérleti kereslettel |
 
@@ -177,23 +177,23 @@ ROI_padlástér = (Új piaci érték fejlesztés után
 | Műemléki engedélyezés (homlokzat, tetőzet, nyílászárók, bővítés, belső átalakítás) | Előzetes egyeztetés az illetékes örökségvédelmi hatósággal; a védelem fokának és a nevesített értékeknek a lekérdezése; műemléki tapasztalattal rendelkező tervező (S011) |
 | Padlástér: terület (95 vs. 100 m²) és hasznosítható nettó terület | Helyszíni felmérés |
 | Padlástér: az engedély elutasítása vagy csúszása — az S011 szerint a hatóság elutasítja a kérelmet, ha a tevékenység szakszerűtlen, a műemlék jellegét sértő módon változtatja meg vagy épségét veszélyezteti | Előzetes egyeztetés; ütemtartalék; a padlástér értékét nem garantált opcióként kezelni |
-| Utcafront homlokzat felújítási költsége (**MEGADOTT**) | Társasházi döntések vizsgálata; felújítási alap és ütemezés kérdezése; a műemléki eljárás miatti engedélyezési idő beszámítása |
+| Utcafront homlokzat felújítási költsége (**MEGADOTT**) | A tulajdonos szerint felújítási alap nincs, a munka csak közgyűlési határozattal indulhat; a műemléki eljárás miatti engedélyezési időt be kell számítani |
 | Egyetemi szezonalitás a bérletnél `[ASSUMPTION]` | Vegyes célcsoport (hallgatók, oktatók, vendégkutatók); a tanévhez igazodó szerződési idők |
 | A felújítás óta eltelt idő (2006, **MEGADOTT**) | Műszaki állapotfelmérés a vásárlás előtt (villamos, víz, gépészet, nyílászárók) |
 | Jogi és tulajdonjogi státusz; a garázs terhei | Hiteles tulajdoni lap; jogi tanácsadó bevonása az értékesítés előtt |
-| Nem igazolt adatok (A osztály, 143 m, 100 m²) | Energetikai tanúsítvány; távolságmérés; helyszíni felmérés |
+| Nem igazolt adatok (A osztály azonosítója, járatszám) | A tulajdonos A osztályú tanúsítványt, 95 m²-t, kb. 200 m / 5 perces megállót, 10 és 5 perces gyalogidőt mondott (2026.10.01.). A tanúsítvány száma és a járat neve nincs meg |
 | Makrokörnyezeti kamat / ingatlanpiaci ciklus | Érzékenységvizsgálat (kamat, bérleti díj, kihasználtság); hosszú távú tartás tervezése |
 
 ---
 
 ## 8. Ajánlott következő lépések (due diligence)
 
-1. **Jogi ellenőrzés** — tulajdonjogi helyzet és teherbejegyzések; hiteles (E-hiteles) tulajdoni lap; a garázs terheinek tisztázása, ha az ajánlat része.
+1. **Jogi ellenőrzés** — tulajdonjogi helyzet és teherbejegyzések; hiteles (E-hiteles) tulajdoni lap. A garázs a tulajdonos szerint az ár része, a lapján teher van.
 2. **Műemléki egyeztetés** — a védelem foka, a nevesített műemléki értékek, az illetékes örökségvédelmi hatóság előzetes álláspontja (S011).
-3. **Társasházi dokumentumok** — alapító okirat (helyiségek, padlástér), SZMSZ, közgyűlési jegyzőkönyvek, felújítási alap, utcafront-felújítási tervek, közös költség igazolása.
-4. **Helyszíni felmérés** — a padlástér területe (95 vs. 100 m²), statikája és belmagassága; műszaki állapotfelmérés (elektromos, víz, gépészet, nyílászárók).
-5. **Energetikai tanúsítvány** — az A osztály megerősítése friss tanúsítvánnyal.
-6. **Tömegközlekedési távolság** mérése (megadott 143 m vs. ~221 m légvonalban az OSM alapján).
+3. **Társasházi dokumentumok** — alapító okirat (a tulajdonos szerint a pince közös, a lépcsőház lakáson belüli), SZMSZ, közgyűlési jegyzőkönyvek. Felújítási alap a tulajdonos szerint nincs.
+4. **Helyszíni felmérés** — a tulajdonos a padlást 95 m²-nek, a gerincet 4,5 m-nek, a térdfalat 1,3 m-nek mondja. A közös pince közlése: 80 m², 4–5 m belmagasság. Műszaki állapotfelmérés (elektromos, víz, gépészet, nyílászárók).
+5. **Energetikai tanúsítvány** — a tulajdonos A osztályt mond; a kelte és a hiteles azonosító másolata kell.
+6. **Tömegközlekedési távolság** — megadott 143 m; OSM ~221 m légvonal; a tulajdonos kb. 200 m és 5 percet mond, járatszám nélkül.
 7. **Piaci összehasonlítás** — Hungária utca és közvetlen környéke elmúlt 12–24 havi tranzakciós adatai (m² ár, kínálati vs. tranzakciós).
 8. **Kivitelezői ajánlat** — S1 / S2 / S3 / S4 szcenáriókra, hogy a pénzügyi modell képletei behelyettesíthetők legyenek.
 

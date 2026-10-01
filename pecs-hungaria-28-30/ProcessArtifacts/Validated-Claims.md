@@ -35,19 +35,20 @@ a nem tényállítás jellegű hasznosítási ötletek (F0 „Potenciális felha
 | C11b | Nyers, beépítetlen állapot | Technical Spec | UNVERIFIABLE | — | Fizikai állapot, helyszíni szemle kell | adatlap §3, §6 |
 | C11c | Engedély megszerezhető; szinte falig/tetőig beépíthető | Legal Requirement | UNVERIFIABLE | S001 I.2, S009, S010, S011 (kontextus) | Az épület műemlék; az örökségvédelmi engedély szükségessége a védelem fokától és a nevesített értékektől függ; alapító okirat és építési hatóság is releváns | adatlap §6, §8; index 05; analysis §1, §5, §7 |
 | C12 | Összes potenciális terület: ~214 m² | Statistic | CORRECTED | S001 I.4 (számított) | 114 + 95 = 209 m² (az F0 belső számítása 114 + 100 = 214 konzisztens volt) | lásd B. tábla |
-| C13 | Déli tájolás | Technical Spec | UNVERIFIABLE | — | Nem dokumentált | adatlap §3 |
+| C13 | Déli tájolás | Technical Spec | UNVERIFIABLE | tulajdonosi közlés, 2026.10.01. | Két nagyszoba déli, utcafronti, együtt 4 ablak; háló, lépcsőház és konyha északi. Okirat nincs | adatlap §3 |
 | C14 | Nincs erkély/terasz | Technical Spec | UNVERIFIABLE | — | A nyilvántartás nem tünteti fel; a hiány nem bizonyíték | adatlap §3 |
-| C15 | Saját gázkazán (önálló szabályozás) | Technical Spec | UNVERIFIABLE | — | Nem dokumentált | adatlap §4 |
-| C16 | Modern, jó állapotú nyílászárók, csere nem szükséges | Technical Spec | UNVERIFIABLE | S011 (kontextus) | Műemléknél a nyílászárók felújítása/cseréje engedélyköteles lehet | adatlap §4 |
-| C17 | Energetikai besorolás: A osztály | Performance Claim | UNVERIFIABLE | — | Tanúsítvány nem áll rendelkezésre | adatlap §4; index 03 |
-| C18 | 2006-ban felújított, azóta egyetlen személy lakta, közepes-jó állapot | Date/Deadline | UNVERIFIABLE | — | A dokumentumokból nem állapítható meg | adatlap §4 |
-| C19 | Zárt belső udvari parkoló | Technical Spec | UNVERIFIABLE | S002 (kontextus) | A nyilvántartásban külön önálló ingatlan a garázs (13 m²); a kapcsolat ismeretlen | adatlap §5; index 04 |
-| C20 | Közös költség ~20 000 Ft/hó | Cost Estimate | UNVERIFIABLE | — | Társasházi kimutatás nincs | adatlap §5 |
+| C15 | Saját gázkazán (önálló szabályozás) | Technical Spec | UNVERIFIABLE | tulajdonosi közlés, 2026.10.01. | Gázkazán, „max 7-7 éves” egy készüléknek értve, karbantartás 1 éve. A gáz és a villany órás | adatlap §4 |
+| C16 | Modern, jó állapotú nyílászárók, csere nem szükséges | Technical Spec | UNVERIFIABLE | S011 (kontextus); tulajdonosi közlés, 2026.10.01. | 2006-ban a nyílászárók is újultak. Műemléknél a csere engedélyköteles lehet | adatlap §4 |
+| C17 | Energetikai besorolás: A osztály | Performance Claim | UNVERIFIABLE | tulajdonosi közlés, 2026.10.01. | A tulajdonos A osztályú tanúsítványt mond. Kelte és hiteles azonosító nincs meg | adatlap §4; index 03 |
+| C18 | 2006-ban felújított, azóta egyetlen személy lakta, közepes-jó állapot | Date/Deadline | UNVERIFIABLE | tulajdonosi közlés, 2026.10.01. | Terjedelem: fal, parketta, gipszstukkó, nyílászárók. Számla nincs | adatlap §4 |
+| C19 | Zárt belső udvari parkoló | Technical Spec | UNVERIFIABLE | S002 (kontextus); tulajdonosi közlés, 2026.10.01. | A tulajdonos szerint azonos a 4464/A/14 garázzsal és az ár része. A teher a tulajdoni lapon van | adatlap §5; index 04 |
+| C20 | Közös költség ~20 000 Ft/hó | Cost Estimate | UNVERIFIABLE | tulajdonosi közlés, 2026.10.01. | Pontosan 20 000 Ft/hó, benne víz és szemét. Kimutatás nincs | adatlap §5 |
 | C21a | A lakáshoz lépcsőház tartozik | Technical Spec | VERIFIED | S001 I.4 („10.44 nm lépcsőházzal”) | 10,44 m² | adatlap §1, §5; index 02 |
-| C21b | Saját, privát lépcsőház, nem osztott más lakással | Legal Requirement | UNVERIFIABLE | S001 I.3–I.4 (konzisztens) | Az alapító okirat nem áll rendelkezésre | adatlap §3, §5 |
-| C22 | A lakáshoz hatalmas, közös pince tartozik | Technical Spec | UNVERIFIABLE | S004 (kiegészítés, 2026.10.01.); S001 nem tartalmaz pinceterületet | Tulajdonosi közlés. Méret, jogcím és bejárat hiányzik | adatlap §5; index 04; ugynoki-ertekesitesi-tajekoztato.md |
+| C21b | Saját, privát lépcsőház, nem osztott más lakással | Legal Requirement | UNVERIFIABLE | S001 I.3–I.4 (konzisztens); tulajdonosi közlés, 2026.10.01. | Lakáson belüli, intarziás 4 m-es ablak. Az alapító okirat másolata nincs meg | adatlap §3, §5 |
+| C22 | A lakáshoz hatalmas, közös pince tartozik | Technical Spec | UNVERIFIABLE | tulajdonosi közlés, 2026.10.01.; S001 nem tartalmaz pinceterületet | 80 m², 4–5 m belmagasság, a ház közös pincéje, kapualj és udvar, száraz, villany, szellőző, tárolás. A 209 m²-be nem számít | adatlap §5; index 04; ugynoki-ertekesitesi-tajekoztato.md |
+| C23 | 2026.10.01. további tulajdonosi válaszok: lift nincs, gyalogidők, homlokzati alap, eladás köre | Technical Spec | UNVERIFIABLE | tulajdonosi közlés, 2026.10.01. | Lift nincs, egy emelet. Kar 10 perc, klinika 5 perc. Megálló kb. 200 m / 5 perc, járatszám nélkül. Belváros kb. ugyanitt kezdődik. Felújítási alap nincs. Teljes lakás eladó, garázs együtt, tulajdonostársak egyetértésével | adatlap §2, §5, §8; index 04, 06; ugynoki-ertekesitesi-tajekoztato.md 8. fejezet |
 
-**Összesítés:** VERIFIED: 8 · CORRECTED: 5 · OUTDATED: 1 · UNVERIFIABLE: 19 · REFUTED: 0 · Összesen: 33
+**Összesítés:** VERIFIED: 8 · CORRECTED: 5 · OUTDATED: 1 · UNVERIFIABLE: 20 · REFUTED: 0 · Összesen: 34
 
 ## B. A CORRECTED / OUTDATED állítások részletei (módszertani kötelezettség)
 

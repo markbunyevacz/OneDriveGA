@@ -138,3 +138,17 @@ A kérés: professzionális leírás, amely az értékesítőt a pécsi viszonyo
 A 13 kérdés a `Deliverables/ugynoki-ertekesitesi-tajekoztato.md` 8. fejezetében van. Válasz nélkül a tájékoztató tervezet marad.
 
 A 12,9%-os lakásállomány-arány az S014 oldal saját számainak olvasata (2026.10.01., WebFetch). Az oldal egy mondatban lakóépületnek nevezi a 72 077-et; a fejléc „összes lakás”, és az épületeket külön, 24 819-ként számolja. A KSH-tábla továbbra sincs megnyitva. A Hungária utcai 29,9 M Ft-os, 1 szobás hirdetés ugyanazon az oldalon másik ingatlan, áralapnak nem használtuk.
+
+## 10. Kiegészítés, 2026.10.01. — tulajdonosi válaszok
+
+A 8. fejezet 13 kérdésére válasz érkezett. Státuszuk megadott: okirat, tanúsítványmásolat és társasházi kimutatás nem került a csomagba.
+
+| Döntés | Választás |
+|---|---|
+| D-17 | A 80 m²-es, 4–5 m belmagasságú pince a ház közös pincéje. A 114 m²-hez és a 209 m²-hez nem adódik hozzá, a hirdetésben saját pinceként nem szerepel |
+| D-18 | A zárt udvari parkoló a tulajdonos szerint a 4464/A/14 garázs, és az eladási ár része. A tulajdoni lapon lévő teher miatt tehermentes átruházás nincs ígérve |
+| D-19 | A padlás helyszíni mérete a tulajdonos szerint 95 m², gerinc 4,5 m, térdfal 1,3 m. A 100 m²-es korábbi közlés lezárható. Állómagasságú nettó területet nem számolunk |
+| D-20 | Az A osztály a tulajdonos szerint tanúsítvánnyal igazolt, de azonosító és kelte nélkül a hirdetésben csak a tulajdonosra hivatkozva szerepelhet. A „max 7-7 éves” kazánközlést egy készüléknek értjük |
+| D-21 | A kikiáltási ár továbbra sem a 108 M Ft-os vetítés. A termék már leírható; az árat 3–5 szigeti, garázsos hirdetéshez kell tenni, és a tulajdonos hagyja jóvá |
+
+Nyitva: a tanúsítvány kelte és hiteles azonosítója, a járat neve, és hogy a kazán egy készülék-e.

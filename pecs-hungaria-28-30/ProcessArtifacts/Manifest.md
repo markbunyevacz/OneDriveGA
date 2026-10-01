@@ -1,16 +1,16 @@
 # Manifest — a csomag fájlleltára
 
-Generálva: 2026-10-01 14:08 UTC · szkript: `BuildScripts/build_manifest.py`. A leltár a saját fájlját (`Manifest.md`) nem tartalmazza.
+Generálva: 2026-10-01 14:27 UTC · szkript: `BuildScripts/build_manifest.py`. A leltár a saját fájlját (`Manifest.md`) nem tartalmazza.
 
 ## Verziókövetésbe kerülő fájlok
 
 | Fájl | Könyvtár | KB | Szó | Állapot | Teljességi ellenőrzés |
 |---|---|---|---|---|---|
 | `.gitignore` | (gyökér) | 0.3 | 34 | OK | nem üres, nincs helykitöltő |
-| `adatlap.md` | Deliverables | 14.3 | 1824 | DRAFT (felhasználói jóváhagyásra vár) | nem üres, nincs helykitöltő |
-| `befektetesi-elemzes.md` | Deliverables | 14.8 | 1859 | DRAFT (felhasználói jóváhagyásra vár) | nem üres, nincs helykitöltő |
-| `index.html` | Deliverables | 21.0 | 1022 | DRAFT (felhasználói jóváhagyásra vár) | HTML-szerkezet rendben |
-| `ugynoki-ertekesitesi-tajekoztato.md` | Deliverables | 13.8 | 2100 | DRAFT (felhasználói jóváhagyásra vár) | nem üres, nincs helykitöltő |
+| `adatlap.md` | Deliverables | 16.3 | 2123 | DRAFT (felhasználói jóváhagyásra vár) | nem üres, nincs helykitöltő |
+| `befektetesi-elemzes.md` | Deliverables | 15.2 | 1939 | DRAFT (felhasználói jóváhagyásra vár) | nem üres, nincs helykitöltő |
+| `index.html` | Deliverables | 22.1 | 1173 | DRAFT (felhasználói jóváhagyásra vár) | HTML-szerkezet rendben |
+| `ugynoki-ertekesitesi-tajekoztato.md` | Deliverables | 18.2 | 2840 | DRAFT (felhasználói jóváhagyásra vár) | nem üres, nincs helykitöltő |
 | `README.md` | ProcessArtifacts/BuildScripts | 2.2 | 270 | TESTED | nem üres, nincs helykitöltő |
 | `build_manifest.py` | ProcessArtifacts/BuildScripts | 5.3 | 575 | TESTED | Python-fordítás rendben |
 | `extract_inventory.py` | ProcessArtifacts/BuildScripts | 6.1 | 724 | TESTED | Python-fordítás rendben |
@@ -20,16 +20,16 @@ Generálva: 2026-10-01 14:08 UTC · szkript: `BuildScripts/build_manifest.py`. A
 | `verify_sources.py` | ProcessArtifacts/BuildScripts | 4.8 | 530 | TESTED | Python-fordítás rendben |
 | `Gap-List.md` | ProcessArtifacts | 4.7 | 717 | DRAFT | nem üres, nincs helykitöltő |
 | `Plan-vs-Content.md` | ProcessArtifacts | 5.8 | 1227 | DRAFT | nem üres, nincs helykitöltő |
-| `Process-History.md` | ProcessArtifacts | 16.5 | 2367 | DRAFT | nem üres, nincs helykitöltő |
+| `Process-History.md` | ProcessArtifacts | 17.8 | 2567 | DRAFT | nem üres, nincs helykitöltő |
 | `Source-Inventory.md` | ProcessArtifacts | 4.9 | 757 | DRAFT | nem üres, nincs helykitöltő |
 | `Source-Registry.md` | ProcessArtifacts | 6.3 | 700 | DRAFT | nem üres, nincs helykitöltő |
 | `Spot-Check-Guide.md` | ProcessArtifacts | 3.8 | 621 | DRAFT | nem üres, nincs helykitöltő |
-| `Traceability-Matrix.md` | ProcessArtifacts | 3.6 | 581 | DRAFT | nem üres, nincs helykitöltő |
-| `Validated-Claims.md` | ProcessArtifacts | 12.3 | 1838 | DRAFT | nem üres, nincs helykitöltő |
+| `Traceability-Matrix.md` | ProcessArtifacts | 3.8 | 619 | DRAFT | nem üres, nincs helykitöltő |
+| `Validated-Claims.md` | ProcessArtifacts | 13.4 | 1998 | DRAFT | nem üres, nincs helykitöltő |
 | `README.md` | (gyökér) | 4.5 | 523 | OK | nem üres, nincs helykitöltő |
 | `README.md` | Sources | 1.8 | 208 | OK | nem üres, nincs helykitöltő |
 
-**Összesen:** 22 fájl · 168.1 KB · 20855 szó · ellenőrzési probléma: 0
+**Összesen:** 22 fájl · 178.6 KB · 22523 szó · ellenőrzési probléma: 0
 
 ## Helyi, nem verziózott forrásfájlok (`.gitignore` kizárja)
 
