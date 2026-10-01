@@ -1,0 +1,12 @@
+# A forrás-PDF-ek személyes adatokat tartalmaznak (nevek, azonosítók, lakcímek,
+# számlaadatok, tartozások). A repó nyilvános, ezért ezek sosem kerülhetnek fel.
+Sources/*
+!Sources/README.md
+
+# Privát munkafájlok (nem nyilvánosak)
+Private/
+*.pdf
+
+# Python gyorsítótár
+__pycache__/
+*.pyc
